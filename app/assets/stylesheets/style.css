@@ -116,10 +116,7 @@ iframe {
 	top:0px;
 	left:0px;
 }
-.header-home {
-	background-color:rgba(0,0,0,0.8);
-	background-image:url(image-path('p.PNG'));
-}
+
 .site-header .navbar-collapse {
 	float:left;
 }
