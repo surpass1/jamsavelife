@@ -1,0 +1,116 @@
+<header class="site-header header-home">
+    <!-- tp-bar -->
+    <div class="tp-bar">
+        <div class="container">
+            <!-- logo -->
+            <div class="logo">
+                <a href="#"><%= image_tag("logo.png", :size=> '100x100')%></a>
+                <a><h1 class="brand" style="color:#fff;">JUNA AMAGARA MINISTRIES</h1></a> 
+            </div>  
+           
+            <!-- counter ends -->
+            <div class="counter">
+                  <p class="lead btn btn-lg btn-block btn-warning ">**Donate**
+                    <a href="#"><%= image_tag("logo.png", :size=> '30x30')%></a>
+                  </p>
+                <div class="">
+                      <p class="notice"><%= notice %></p>
+                      <p class="alert"><%= alert %></p></div>
+                <div class="event-bx">
+					      <h4><a href="#">Juna Amagara</a></h4>
+                    <ul class="options">
+                    	<li><i class="icon-map-marker"></i>Addis Ababa, Ethiopia</li>
+                    </ul>
+                    <p>Itaque earum rerum hic tenetur a sapien delectus, ut aut reiciendis rerum hic tenet rerum hic tenetur</p>
+                    <%= image_tag("logo.png", :size=> '100x100')%>
+                    <div class="event-bx-btm">
+                    	<a href="events.html" class="btn btn-default">View More Events</a>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <!-- navbar Main Navigation -->
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">
+          Toggle navigation
+        </span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+      </div>
+      
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+              <li class="active"><%= link_to "Home", root_path %></li>
+              <li><%= link_to "Sponsorship" %></li>
+          </ul>
+          
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Contruction<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                     <li><%= link_to "kishanye Mbarara" %></li>
+                     <li><%= link_to "Rubanda Kabale" %></li>
+                     <li><%= link_to "kayanja Hoima" %></li>
+                  </ul>
+              </li>
+
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">
+                      About <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><%= link_to "Who we are" %></li>
+                      <li><%= link_to "About Uganda" %></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Faqs/News <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to "Faqs" %></li>
+                    <li><%= link_to "News" %></li>
+                  </ul>
+              </li>
+              
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Ministries
+                  <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to "Children" %></li>
+                    <li><%= link_to "Education"%></li>
+                    <li><%= link_to "Discipleship" %></li>
+                    <li><%= link_to "Vocational" %></li>
+                  </ul>
+              </li>
+          </ul>
+        </div>
+        <div class="pull-right">
+            <ul class="social-links">
+                <li><a href="#" class="icon-facebook" data-placement="bottom" data-toggle="tooltip" title="" data-original-title="facebook"></a></li>
+            </ul>
+        </div>
+        <div class="site-search">
+            <span class="search-btn"></span>
+            <div class="search-contain">
+                <form method="post" action="#">
+                    <input type="text" placeholder="Search...">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</header>
+<article class="banner" style="background-image:url(assets/p.PNG);">
+</article>
