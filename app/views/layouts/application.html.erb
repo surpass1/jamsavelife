@@ -5,10 +5,17 @@
 	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	  <%= csrf_meta_tags %>
-	</head>
+	  <style type="text/css">
+	    body{
+	      font-size: 160%;
+	    }
+	  </style>
+    </head>
 	<body>
-
-	<%= yield %>
+		<%= render :partial => 'layouts/header' %>
+		<%= yield %>
+		</div>
+		<%= render :partial => 'layouts/footer' %>
 		<script type="text/javascript">
 		  $(document).ready(function() {
 		    $('.carousel').carousel({interval: 15000});
