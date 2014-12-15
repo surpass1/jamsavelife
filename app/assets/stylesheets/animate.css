@@ -15,7 +15,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .carousel {
     height: 400px;
     overflow: hidden;
-    background-color: #efefef;
+    background-color: none;
     background-position:center center;
     background-attachment:fixed;
     background-size:cover;
@@ -32,7 +32,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .carousel .active.left, .carousel .active.right {
     left:0;
     opacity:0;
-    z-index:2;
+    z-index:1;
 }
 .carousel .next, .carousel .prev {
     left:0;
