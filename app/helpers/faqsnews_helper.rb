@@ -1,0 +1,2 @@
+module FaqsnewsHelper
+end

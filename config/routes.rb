@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'sponsorship/index'
+
+  get 'faqsnews/news'
+
+  get 'faqsnews/faqs'
+
+  get 'about/whoweare'
+
+  get 'about/uganda'
+
   get 'construction/mbarara'
 
   get 'construction/hoima'
