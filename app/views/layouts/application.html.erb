@@ -8,7 +8,8 @@
 	  <style type="text/css">
 	    body{
 	      font-size: 160%;
-	      /*color:#590707;*/
+	      color:#000;
+	      text-shadow: black 0.1em;
 
 	    }
 	    .bg {
@@ -34,10 +35,11 @@
 		}
 	  </style>
     </head>
-	<body>
+	<body class="fadeInUp in" data-animation="fadeInUp" data-delay="0">
 		<%= render :partial => 'layouts/header' %>
 		<%= yield %>
 		</div>
+		</div></div>
 		<%= render :partial => 'layouts/footer' %>
 		<script type="text/javascript">
 		  $(document).ready(function() {
