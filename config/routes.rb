@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'construction/mbarara'
+
+  get 'construction/hoima'
+
+  get 'construction/kabale'
+
+  get 'minstry/children'
+
+  get 'minstry/education'
+
+  get 'minstry/discipleship'
+
+  get 'minstry/vacational'
+
   mount RailsAdmin::Engine => '/juna', as: 'rails_admin'
   root 'home#index'
 

@@ -116,7 +116,9 @@ iframe {
 	top:0px;
 	left:0px;
 }
-
+.header-home {
+	background-color:rgba(0,0,0,0.7);
+}
 .site-header .navbar-collapse {
 	float:left;
 }
@@ -757,7 +759,7 @@ ul.options,
 	float:right;
 }
 .counter {
-	color:#fff;
+	color:#efefef;
 	position:relative;
 }
 .social-links + .counter {
@@ -770,8 +772,8 @@ ul.options,
 	overflow:hidden;
 }
 .counter .count-down {
-	z-index:10;
-	position:relative;
+	z-index:5;
+	position:absolute;
 }
 .dsCountDown {
 	text-align:center;
@@ -818,14 +820,13 @@ ul.options,
 
 /*** Event-bx on Countdown Timer ***/
 .event-bx {
-	width:100%;
 	min-height:100%;
-	padding:80px 20px 15px 20px;
+	padding:50px 20px 15px 20px;
 	color:#666666;
-	background-color:#ffffff;
-	box-shadow:0px 0px 3px rgba(0,0,0,0.3);
-	-moz-box-shadow:0px 0px 3px rgba(0,0,0,0.3);
-	-webkit-box-shadow:0px 0px 3px rgba(0,0,0,0.3);
+	background-color:#efefef;
+	box-shadow:0px 0px 3px rgba(0.3,3,1,0.3);
+	-moz-box-shadow:0px 0px 3px rgba(0.3,3,1,0.3);
+	-webkit-box-shadow:0px 0px 3px rgba(0.3,3,1,0.3);
 	
 	opacity:0;
 	visibility:hidden;
@@ -837,9 +838,8 @@ ul.options,
 	transition:all 0.4s ease;
 	-moz-transition:all 0.4s ease;
 	-webkit-transition:all 0.4s ease;
-	
-	
-	z-index:5;
+		
+	z-index:10;
 	position:absolute;
 	top:0px;
 	left:0px;
@@ -848,9 +848,9 @@ ul.options,
 	opacity:1;
 	visibility:visible;
 	
-	transform:translateY(0px);
-	-moz-transform:translateY(0px);
-	-webkit-transform:translateY(0px);
+	transform:translateY(10px);
+	-moz-transform:translateY(10px);
+	-webkit-transform:translateY(10px);
 }
 .event-bx h4,
 .event-bx > p:last-child {
