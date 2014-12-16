@@ -27,8 +27,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .mine p { text-align: center; padding: 10px; background-color: #884500; color: #fff;} 
 
 .thumbnail {
-    width: 300px;
-    height: 166px;
+    width: 320px;
+    height: 256px;
     overflow: hidden; /* contain images within thumbnail boundaries */
     border: 0; /* removes Bootstrap's default border */
     box-shadow: 0 12px 12px -10px #c4c4c4;

@@ -50,19 +50,19 @@
           </button>
       </div>
       
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="collapse navbar-collapse heading text-center animated flipInX in" id="bs-example-navbar-collapse-1" data-animation="flipInX" data-delay="0">
           <ul class="nav navbar-nav">
-              <li class="active"><%= link_to "Home", root_path %></li>
-              <li><%= link_to "Sponsorship" %></li>
+              <li class="active animated fadeInUp in" data-animation="fadeInUp" data-delay="0"><%= link_to "Home", root_path %></li>
+              <li class="animated fadeInUp in" data-animation="fadeInUp" data-delay="300"><%= link_to "Sponsorship", sponsorship_index_path %></li>
           </ul>
           
           <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
+              <li class="dropdown animated fadeInUp in" data-animation="fadeInUp" data-delay="200">
                   <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Contruction<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                     <li><%= link_to "kishanye Mbarara" %></li>
-                     <li><%= link_to "Rubanda Kabale" %></li>
-                     <li><%= link_to "kayanja Hoima" %></li>
+                     <li><%= link_to "kishanye Mbarara", construction_mbarara_path %></li>
+                     <li><%= link_to "Rubanda Kabale", construction_kabale_path%></li>
+                     <li><%= link_to "kayanja Hoima", construction_hoima_path%></li>
                   </ul>
               </li>
 
@@ -71,15 +71,15 @@
                       About <b class="caret"></b>
                   </a>
                   <ul class="dropdown-menu">
-                      <li><%= link_to "Who we are" %></li>
-                      <li><%= link_to "About Uganda" %></li>
+                    <li><%= link_to "Who we are", about_whoweare_path %></li>
+                    <li><%= link_to "About Uganda", about_uganda_path  %></li>
                   </ul>
               </li>
               <li class="dropdown">
                   <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Faqs/News <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><%= link_to "Faqs" %></li>
-                    <li><%= link_to "News" %></li>
+                    <li><%= link_to "Faqs", faqsnews_faqs_path %></li>
+                    <li><%= link_to "News", faqsnews_news_path %></li>
                   </ul>
               </li>
               
@@ -88,10 +88,10 @@
                   <b class="caret"></b>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><%= link_to "Children" %></li>
-                    <li><%= link_to "Education"%></li>
-                    <li><%= link_to "Discipleship" %></li>
-                    <li><%= link_to "Vocational" %></li>
+                    <li><%= link_to "Children", minstry_children_path  %></li>
+                    <li><%= link_to "Education", minstry_education_path %></li>
+                    <li><%= link_to "Discipleship", minstry_discipleship_path %></li>
+                    <li><%= link_to "Vocational", minstry_vacational_path %></li>
                   </ul>
               </li>
           </ul>
@@ -109,7 +109,7 @@
                     <input type="text" placeholder="Search...">
                     <input type="submit">
                 </form>
-                <p class="lead btn btn-lg btn-block btn-warning ">**Donate**
+                <p class="lead btn btn-lg btn-block btn-warning animated fadeInUp in" data-animation="fadeInUp" data-delay="0">**Donate**
                   <a href="#"><%= image_tag("logo.png", :size=> '30x30')%></a>
                 </p>
             </div>

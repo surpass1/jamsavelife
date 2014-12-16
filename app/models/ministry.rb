@@ -6,5 +6,6 @@ class Ministry < ActiveRecord::Base
    def category_enum
    	[['education'],['evangelism'],['children'], ['vocational']]
    end
+   
    validates_presence_of :category, :title, :description
 end

@@ -2,7 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-7 col-lg-7" style="">
-                <h2>Juna Amagara Ministries</h2>
+                <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
+                    <h2 style="color:#fff;">Juna Amagara Ministries</h2>
+                </header>
                 <p>
                     The mission of this ministry is to raise up and equip children in Uganda with the tools they need to become leaders within their community.  It is our vision to empower their personal and spiritual growth by providing children with safe shelter, quality education, balanced nutrition, health education and vocational training
                 </p>
@@ -54,55 +56,110 @@
     </div>
 </div>  
 
-<article class="section" style="background-color:#EABD6c; color:black">
+<article class="section bg-theme">
     <div class="container">
-        <header class="heading text-center animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
-            <font size="+2">A Ministry of Hope for AIDS Orphans in Uganda</font>
-        </header>
-        <p class="margn-btm-80 animated fadeInUp in" data-animation="fadeInUp" data-delay="200">The HIV/AIDS epidemic is destroying families and entire cultures throughout Africa.  But in Uganda, there is hope. This East African Republic long ago built a coalition of government, churches and schools that has worked to dramatically slow the spread of HIV/AIDS and offer relief to infected victims. More than a million people have died here since the disease began, leaving over 1.5 million children without parents. Though Ugandans have taken in more than 700,000 orphans as their own children, some 800,000 are left to care for themselves. Juna Amagara Ministries was founded in 2004 to help these children grow in Christ to become healthy, productive members of society. Juna Amagara means "Saving Life."
-        </p>
-        
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 animated pulse in" data-animation="pulse" data-delay="200">
-                <div class="causes-box">
-                    <figure>
-                        <img src="img-4.jpg" alt="image">
-                        <figcaption>
-                            <a href="saved_resource.html" class="btn btn-default">Donate Now</a>
-                        </figcaption>
-
+        <div class="row col-md-11">
+            <div class="testimonials-section">
+                <div class="caro-fade animated flipInX in" data-animation="flipInX" data-delay="0">
+                <div class="testimonials">
+                    <figure class="image">
+                        <img src="img-16.jpg" alt="image">
                     </figure>
-                    <div class="causes-detail">
-                        <h6><a href="http://wow-themes.com/demo/html/helpinghands/causes-detail.html">Change a Life Through Education</a></h6>
-                        <p class="post-meta">we need to collect <strong class="color-theme"> $70,000</strong></p>
-                        <div class="effect">
-                            <p></p>
-                            <div class="causes-hover">
-                                <p class="help-text">Help to Collect this...</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
+                    <h4 class="color-theme">Marry Williams</h4>
+                    <p class="designation">CEO, Liberties</p>
+                    <p>Cumsociis natoque penatibus et magnis dis parturient montes,Vivamus sagittis lacus vel augue laoreet rutrum faucibus igludolorsalary auctor. Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit montes, vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consecte</p>
                 </div>
+
+       
             </div>
+        </div>
+    </div>
+</article>
+
+
+
+<article class="section" style="background-color:#EFEFEF; color:black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-sm-12 col-xs-12 animated pulse in" data-animation="pulse" data-delay="200">
+                <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
+                    <h2>A Ministry of Hope for AIDS Orphans in Uganda</h2>
+                </header>
+                <p class="margn-btm-80 animated fadeInUp in" data-animation="fadeInUp" data-delay="200">
+                    The HIV/AIDS epidemic is destroying families and entire cultures throughout Africa.  But in Uganda, there is hope. This East African Republic long ago built a coalition of government, churches and schools that has worked to dramatically slow the spread of HIV/AIDS and offer relief to infected victims. More than a million people have died here since the disease began, leaving over 1.5 million children without parents. Though Ugandans have taken in more than 700,000 orphans as their own children, some 800,000 are left to care for themselves. Juna Amagara Ministries was founded in 2004 to help these children grow in Christ to become healthy, productive members of society. Juna Amagara means "Saving Life."
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-8 col-xs-8">
+                <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
+                    <h2>Watch video</h2>
+                </header>
+                <iframe src="http://player.vimeo.com/video/88617114?title=0&byline=0&portrait=0&color=00b952" width="971" height="228" frameborder="0"></iframe>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-2 animated pulse in" data-animation="pulse" data-delay="200"></div>
+        </div>
+        
+        <div class="row wrapper">
+            <% @ministry.each do |ministry|%>
+                <div class="col-md-3 col-sm-6 col-xs-6 animated pulse in" data-animation="pulse" data-delay="200">
+                    <div class="portfolio-box">
+                        <figure class="">
+                            
+                            <%= image_tag ministry.avatar %>
+                            <figcaption>
+                                <a href="saved_resource.html" class="btn btn-default">Donate Now</a>
+                            </figcaption>
+                        </figure><br/>
+                       <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
+                                <font><%= ministry.title %></font>
+                            </header>
+                    </div>
+                </div>
+            <% end %>
+            
         </div>
     </div>
 
 </article>
-    
-<div class="jumbotron">
-    <div class="row">
-        <div class="col-md-8 col-lg-8 ">
-            
 
-            
+
+
+    
+<article class="">
+    <div class="container">
+
+        <header class="heading text-center animated flipInX in" data-animation="flipInX" data-delay="0">
+            <h2 style="color:white">You've helped Raise</h2>
+        </header>
+        <p class="text-center margn-btm-80 animated flipInX in" data-animation="flipInX" data-delay="200">Cumsociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnisodas dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus igludolorsalary auctor. Nulla vitae elit libero, a pharetra augue.</p>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="sketched-progress">
+                    <div class="progress-stats">
+                        <span class="max-val">Target $25,000</span>
+                        <span class="current-val" data-current-val="30">Raised $6,300</span>
+                        <span class="min-val">Start $0.00</span>
+                    </div>
+                    <div class="progress-fill-area">
+                        <div class="sketch-fill"></div>
+                        <div class="pre-fill"></div>
+                        <div class="progress-fill" style="height: 30%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="text-center animated fadeInUp in" data-animation="fadeInUp" data-delay="600">
+                    <h3>We've Reached so Far</h3>
+                    <p>Cumsociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnisodas dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus igludolorsalary auctor. Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur.</p>
+                    <a href="saved_resource.html" class="btn btn-primary btn-lg">Donate Now</a>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 col-lg-4 ">
-            <iframe src="http://player.vimeo.com/video/88617114?title=0&byline=0&portrait=0&color=00b952" width="971" height="228" frameborder="0"></iframe>
-        </div>
+        
     </div>
-</div>
+
+</article>          
 <div class="container">
     <div class="row">
         

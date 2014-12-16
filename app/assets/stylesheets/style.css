@@ -116,8 +116,12 @@ iframe {
 	top:0px;
 	left:0px;
 }
+.section{
+	background-color:rgba(0.1,0.1,0.1,0.3);
+}
+
 .header-home {
-	background-color:rgba(0,0,0,0.7);
+	background-color:rgba(0,0,0,0.3);
 }
 .site-header .navbar-collapse {
 	float:left;
@@ -934,7 +938,8 @@ ul.options,
 	opacity: 1;
 	filter: alpha(opacity=100);
 }
-.portfolio-box figure figcaption a.zoom {
+.portfolio-box 
+ figcaption a.zoom {
 	width:40px;
 	height:40px;
 	margin-top:-20px;
@@ -1908,8 +1913,8 @@ ul.options {
 
 
 .comment-box > figure {
-	width:63px;
-	height:63px;
+	width:195px;
+	height:155px;
 	overflow:hidden;
 		
 	border-radius:50%;	
