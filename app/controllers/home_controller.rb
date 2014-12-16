@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-  	@ministry = Home.where(category: 'ministry')
+  	@ministry = Home.all
   end
 end

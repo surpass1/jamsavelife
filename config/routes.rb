@@ -4,10 +4,16 @@ Rails.application.routes.draw do
   get 'faqsnews/news'
 
   get 'faqsnews/faqs'
-
+  #about us controller
   get 'about/whoweare'
 
   get 'about/uganda'
+
+  get 'about/ugandaboard'
+
+  get 'about/usaboard'
+
+  get 'about/staff'
 
   get 'construction/mbarara'
 
