@@ -26,19 +26,19 @@
                     <div class="carousel-inner">
                       <div class="item active">
                         <%= image_tag("banner.png", :class => "img-circle")%>
-                         <div class="carousel-caption right-caption">uywd bue sdjg cjdgc dbjsg</div>
+                         <div class="carousel-caption right-caption">Sponsor a child</div>
                       </div>
                       <div class="item">
                         <%= image_tag("banner.png", :class => "img-circle")%>
-                        <div class="carousel-caption right-caption">uywd bue sdjg cjdgc dbjsg</div>
+                        <div class="carousel-caption right-caption">Make a donation</div>
                       </div>
                       <div class="item">
                         <%= image_tag("banner.png", :class => "img-circle")%>
-                        <div class="carousel-caption right-caption">uywd bue sdjg cjdgc dbjsg</div>
+                        <div class="carousel-caption right-caption">Raise a great generation</div>
                       </div>
                       <div class="item">
                         <%= image_tag("banner.png", :class => "img-circle")%>
-                        <div class="carousel-caption right-caption">uywd bue sdjg cjdgc dbjsg</div>
+                        <div class="carousel-caption right-caption">Feed the hungry and help the poor</div>
                       </div>
 
                 
@@ -82,38 +82,56 @@
 
 <article class="section" style="background-color:#EFEFEF; color:black">
     <div class="container">
-        <div class="row">
-            <div class="col-md-7 col-sm-12 col-xs-12 animated pulse in" data-animation="pulse" data-delay="200">
-                <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
-                    <h2>A Ministry of Hope for AIDS Orphans in Uganda</h2>
-                </header>
-                <p class="margn-btm-80 animated fadeInUp in" data-animation="fadeInUp" data-delay="200">
-                    The HIV/AIDS epidemic is destroying families and entire cultures throughout Africa.  But in Uganda, there is hope. This East African Republic long ago built a coalition of government, churches and schools that has worked to dramatically slow the spread of HIV/AIDS and offer relief to infected victims. More than a million people have died here since the disease began, leaving over 1.5 million children without parents. Though Ugandans have taken in more than 700,000 orphans as their own children, some 800,000 are left to care for themselves. Juna Amagara Ministries was founded in 2004 to help these children grow in Christ to become healthy, productive members of society. Juna Amagara means "Saving Life."
-                </p>
+        <header class="heading text-center animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
+            <h2>Work in progress</h2>
+         </header>
+        <% @event.each do |event|%>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 contents">
+                    <div class="projects projects-list">
+                        <ul class="media-list">
+                            <li class="media animated bounceIn in" data-animation="bounceIn" data-delay="0">
+                                <figure class="hover-strip pull-left">
+                                    <%= image_tag event.avatar, :class=>"media-object", :alt=>"image" %>
+                                    <div class="date-tag">JAM</div>
+                                </figure>
+                                <div class="media-body">
+                                    <h3 class="media-heading btn-warning"><%= event.title %></h3>
+                                    <p class="" align="left"><%= truncate(event.description, :length => 110 )%>
+                                    </p>
+                                    <p class="label label-warning"><%= link_to 'read more', faqsnews_news_path%>
+                                    </p>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                   
+                </div>
             </div>
-            <div class="col-md-4 col-sm-8 col-xs-8">
-                <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
-                    <h2>Watch video</h2>
-                </header>
-                <iframe src="http://player.vimeo.com/video/88617114?title=0&byline=0&portrait=0&color=00b952" width="971" height="228" frameborder="0"></iframe>
-            </div>
-            <div class="col-md-1 col-sm-2 col-xs-2 animated pulse in" data-animation="pulse" data-delay="200"></div>
-        </div>
+        <% end %>
         
-        <div class="row wrapper">
+        <div class="row">
+             <header class="heading text-center animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
+                <h2>Our Ministries </h2>
+             </header>
+
             <% @ministry.each do |ministry|%>
                 <div class="col-md-3 col-sm-6 col-xs-6 animated pulse in" data-animation="pulse" data-delay="200">
                     <div class="portfolio-box">
+                        
                         <figure class="">
                             
                             <%= image_tag ministry.avatar %>
                             <figcaption>
                                 <a href="saved_resource.html" class="btn btn-default">Donate Now</a>
                             </figcaption>
-                        </figure><br/>
+                        </figure>
+
                        <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
                                 <font><%= ministry.title %></font>
-                            </header>
+                        </header>
+                        <p  align="left"  class="well"><%= truncate(ministry.description, :length => 15 )%><%= link_to 'read more', faqsnews_news_path%></p>
                     </div>
                 </div>
             <% end %>
@@ -127,7 +145,11 @@
         <header class="heading text-center animated flipInX in" data-animation="flipInX" data-delay="0">
             <h2 style="color:white">You've helped Raise</h2>
         </header>
-        <p class="text-center margn-btm-80 animated flipInX in" data-animation="flipInX" data-delay="200">Cumsociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnisodas dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus igludolorsalary auctor. Nulla vitae elit libero, a pharetra augue.</p>       
+        <p class="text-center margn-btm-80 animated flipInX in" data-animation="flipInX" data-delay="200">Cumsociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnisodas dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus igludolorsalary auctor. Nulla vitae elit libero, a pharetra augue.</p>
+        <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
+                    <h2>Watch video</h2>
+                </header>
+                <iframe src="http://player.vimeo.com/video/88617114?title=0&byline=0&portrait=0&color=00b952" width="971" height="228" frameborder="0"></iframe>       
     </div>
 
 </article>          
