@@ -1,0 +1,93 @@
+<article class="section">
+    <div class="container">
+        <div class="col-md-9 contents">
+            <% @staff.each do |staff|%>
+                <div class="projects projects-list">
+                    <ul class="media-list">
+                        <li class="media animated bounceIn in" data-animation="bounceIn" data-delay="0">
+                        	<figure class="hover-strip pull-left">
+                        		<a class="pull-left">
+                                	<%= image_tag staff.avatar(:medium)%>
+                                </a>
+                                <div class="date-tag"><span></span>JAM</div>
+                            </figure>
+                            <div class="media-body">
+                                <h4 class="media-heading"><b><%= staff.title %></b></h4>
+                            	<ul class="options">
+                                	<li><i class="icon-map-marker"></i><%= staff.address %></li>
+                                </ul>
+                                <hr/>
+                                <p><%= staff.description %></p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            <% end %>
+            
+        </div>
+        
+        <div class="col-md-3 sidebar">
+            
+            <div class="widget widget_categories animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
+                <header class="heading">
+                    <h4>Categories</h4>
+                </header>
+				<ul>
+                	
+                </ul>
+            </div>
+        </div>
+    </article>
+
+
+
+
+
+    <div class="container">
+    <div class="teams grid-4">
+        <ul>
+            <li class="animated out" data-animation="fadeInUp" data-delay="0">
+                <div class="team-box">
+                    <div class="image-box">
+                        <figure class="image">
+                            <img src="images/resource/team-1.jpg" alt="image">
+                            <figcaption>
+                                <a href="#" class="image-email">
+                                    <i class="icon-envelope-o"></i>
+                                    <p>Send E-Mail</p>
+                                </a>
+                                <div class="btm">
+                                    <a class="icon-twitter" href="#"></a>
+                                    <a class="icon-facebook" href="#"></a>
+                                    <a class="icon-dribbble" href="#"></a>
+                                    <a class="icon-skype" href="#"></a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <h4><a href="team-detail.html">John Smith</a></h4>
+                    <p>Manager</p>
+                    <p>Cumsociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnisodas dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel</p>
+                </div>
+            </li>
+            <li class="animated out" data-animation="fadeInUp" data-delay="100">
+                <div class="team-box">
+                    <div class="image-box">
+                        <figure class="image">
+                            <img src="images/resource/team-2.jpg" alt="image">
+                            
+                        </figure>
+                    </div>
+                    <h4><a href="team-detail.html">Bob Doe</a></h4>
+                    <p>C.E.O</p>
+                    <p>Cumsociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnisodas dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel</p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+

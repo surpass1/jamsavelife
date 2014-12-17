@@ -5,4 +5,5 @@ class Home < ActiveRecord::Base
   def category_enum
 	[['introduction'],['header'],['ministry'], ['footer'], ['advert'], ['event']]
   end
+  validates_presence_of :category, :title, :description
 end

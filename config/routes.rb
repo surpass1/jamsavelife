@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get 'faqsnews/faqs'
   #about us controller
+  
   get 'about/whoweare'
 
   get 'about/uganda'

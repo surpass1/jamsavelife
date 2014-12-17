@@ -5,5 +5,6 @@ class About < ActiveRecord::Base
   def category_enum
 	[['founder'],['usaboard'],['ugandaboard'], ['staff'], ['uganda']]
   end
+  validates_presence_of :category, :title, :description
 
 end

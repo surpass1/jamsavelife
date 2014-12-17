@@ -1,23 +1,23 @@
 <article class="section">
     <div class="container">
         <div class="col-md-9 contents">
-            <% @who.each do |founder|%>
+            <% @usaboard.each do |usa|%>
                 <div class="projects projects-list">
                     <ul class="media-list">
                         <li class="media animated bounceIn in" data-animation="bounceIn" data-delay="0">
                         	<figure class="hover-strip pull-left">
                         		<a class="pull-left">
-                                	<%= image_tag founder.avatar(:medium)%>
+                                	<%= image_tag usa.avatar(:medium)%>
                                 </a>
                                 <div class="date-tag"><span></span>JAM</div>
                             </figure>
                             <div class="media-body">
-                                <h4 class="media-heading"><b><%= founder.title %></b></h4>
+                                <h4 class="media-heading"><b><%= usa.title %></b></h4>
                             	<ul class="options">
-                                	<li><i class="icon-map-marker"></i><%= founder.address %></li>
+                                	<li><i class="icon-map-marker"></i><%= usa.address %></li>
                                 </ul>
                                 <hr/>
-                                <p><%= founder.description %></p>
+                                <p><%= usa.description %></p>
                             </div>
                         </li>
                         

@@ -3,6 +3,6 @@ class Sponsorship < ActiveRecord::Base
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
   def status_enum
-   	[['Sponsored'],['Not supposed'],['Banned']]
+   	[['Sponsored'],['Not supposed'],['Other']]
   end
 end
