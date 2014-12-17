@@ -7,5 +7,5 @@ class Sponsorship < ActiveRecord::Base
   end
   validates_presence_of :name, :age, :childID, :status
   validates_uniqueness_of :childID
-  validates :age, :numericality => { :greater_than_or_equal_to => 1, :less_than_or_equal_to => 15 }
+  validates :age, :numericality => { :greater_than_or_equal_to => 4, :less_than_or_equal_to => 15 }
 end
