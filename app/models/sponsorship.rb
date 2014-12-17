@@ -5,4 +5,7 @@ class Sponsorship < ActiveRecord::Base
   def status_enum
    	[['Sponsored'],['Not supposed'],['Other']]
   end
+  validates_presence_of :name, :age, :childID, :status
+  validates_uniqueness_of :childID
+  validates :age, :numericality => { :greater_than_or_equal_to => 1, :less_than_or_equal_to => 15 }
 end

@@ -1,21 +1,28 @@
 <article class="">
     <div class="container">
-        <div class="teams grid-4">
-            <ul>
-                <li class="animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
-                    <div class="team-box figure">
-                    	<h4 class="badge"><a href="http://wow-themes.com/demo/html/helpinghands/team-detail.html">Name</a></h4>
-                    	<p>Age</p>
-                        <div class="image-box">
-                            <figure class="image">
-                                <img src="./Helping Hands team_files/team-1.jpg" alt="image">
-                            </figure>
+        <% @child.each do |sponsored|%>
+            <div class="teams grid-4">
+                <ul>
+                    <li class="animated out" data-animation="fadeInUp" data-delay="100">
+                        <div class="team-box">
+                            <h4 class="well-small" style="background-color:#efefef;"><%= sponsored.name %><span class="badge pull-right">AGE:<%= sponsored.age %></span></h4>
+                            <div class="image-box">
+                                <figure class="image">
+                                    <%= image_tag sponsored.avatar(:medium) %> 
+                                    <figcaption>
+                                        <br/>
+                                        <br/>
+                                        <%= link_to 'Sponsor this child', root_path%>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            
+                            <p class="well" align="left"><%= sponsored.description %></p>
                         </div>
-                                                
-                        <p>Cumsociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnisodas dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
+                    </li>
+
+                </ul>
+            </div>
+        <% end %>
     </div>
 </article>
