@@ -58,22 +58,36 @@
 
 <article class="section bg-theme">
     <div class="container">
-        <div class="row col-md-11">
+        <div class="row" style="height:100px">
+        <div class="col-md-5">
             <div class="testimonials-section">
                 <div class="caro-fade animated flipInX in" data-animation="flipInX" data-delay="0">
-                <div class="testimonials">
-                    <figure class="image">
-                        <%= image_tag("logo.png")%>
-                    </figure>
-                    <h4 class="color-theme">A Ministry of Hope for AIDS Orphans in Uganda</h4>
-                    
-                    <p> 
-                    The HIV/AIDS epidemic is destroying families and entire cultures throughout Africa.  But in Uganda, there is hope. This East African Republic long ago built a coalition of government, churches and schools that has worked to dramatically slow the spread of HIV/AIDS and offer relief to infected victims. More than a million people have died here since the disease began, leaving over 1.5 million children without parents. Though Ugandans have taken in more than 700,000 orphans as their own children, some 800,000 are left to care for themselves. Juna Amagara Ministries was founded in 2004 to help these children grow in Christ to become healthy, productive members of society. Juna Amagara means "Saving Life."
-                    </p>
+                    <div class="testimonials">
+                        <figure class="image">
+                            <%= image_tag("logo.png")%>
+                        </figure>
+                        <h4 class="color-theme">A Ministry of Hope for AIDS Orphans in Uganda</h4>
+                        
+                        <p align="left"> 
+                        The HIV/AIDS epidemic is destroying families and entire cultures throughout Africa.  But in Uganda, there is hope. This East African Republic long ago built a coalition of government, churches and schools that has worked to dramatically slow the spread of HIV/AIDS and offer relief to infected victims. More than a million people have died here since the disease began, leaving over 1.5 million children without parents. Though Ugandans have taken in more than 700,000 orphans as their own children, some 800,000 are left to care for themselves. Juna Amagara Ministries was founded in 2004 to help these children grow in Christ to become healthy, productive members of society. Juna Amagara means "Save Life."
+                        </p>
+                    </div>
                 </div>
-
        
             </div>
+        </div>
+        <div class="col-md-3">
+            <div class="fb-like-box" data-href="https://www.facebook.com/JunaAmagara?skip_nax_wizard=true&amp;ref_type=logout_gear" data-width="700x700" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+
+            <br>
+             <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
+                <h2>Watch video</h2>
+            </header>
+                <iframe src="http://player.vimeo.com/video/88617114?title=0&byline=0&portrait=0&color=00b952" width="971" height="228" frameborder="0"></iframe>
+        </div>
+        <div class="col-md-3">
+            <div class="fb-comments" data-href="https://www.facebook.com/JunaAmagara?skip_nax_wizard=true&amp;ref_type=logout_gear" data-width="300x300" data-numposts="3" data-colorscheme="light"></div>
+
         </div>
     </div>
 </article>
@@ -85,11 +99,17 @@
         <header class="heading text-center animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
             <h2>Work in progress</h2>
          </header>
-        <% @event.each do |event|%>
             <div class="row">
+
+        <% @event.each do |event|%>
                 <div class="col-lg-4 col-md-4 contents">
                     <div class="projects projects-list">
                         <ul class="media-list">
+                            <li class="media animated bounceIn in" data-animation="bounceIn" data-delay="0">
+                                
+                                <br>
+                                
+                            </li>
                             <li class="media animated bounceIn in" data-animation="bounceIn" data-delay="0">
                                 <figure class="hover-strip pull-left">
                                     <%= image_tag event.avatar, :class=>"media-object", :alt=>"image" %>
@@ -108,9 +128,9 @@
                     </div>
                    
                 </div>
-            </div>
-        <% end %>
-        
+            
+            <% end %>
+        </div>
         <div class="row">
              <header class="heading text-center animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
                 <h2>Our Ministries </h2>
@@ -143,13 +163,10 @@
     <div class="container">
 
         <header class="heading text-center animated flipInX in" data-animation="flipInX" data-delay="0">
-            <h2 style="color:white">You've helped Raise</h2>
+            <h2 style="color:white">You've helped achieve...</h2>
         </header>
-        <p class="text-center margn-btm-80 animated flipInX in" data-animation="flipInX" data-delay="200">Cumsociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnisodas dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus igludolorsalary auctor. Nulla vitae elit libero, a pharetra augue.</p>
-        <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
-                    <h2>Watch video</h2>
-                </header>
-                <iframe src="http://player.vimeo.com/video/88617114?title=0&byline=0&portrait=0&color=00b952" width="971" height="228" frameborder="0"></iframe>       
+        <p class="text-center margn-btm-80 animated flipInX in" data-animation="flipInX" data-delay="200"></p>
+              
     </div>
 
 </article>          

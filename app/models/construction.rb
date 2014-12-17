@@ -3,7 +3,7 @@ class Construction < ActiveRecord::Base
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
   def category_enum
-	[['hoima'],['kabale'],['mbarara'], ['other']]
+	[['Hoima'],['Kabale'],['Mbarara'], ['Rubanda'], ['Kishanje'], ['other']]
   end
 
   validates_presence_of :category, :title, :description
