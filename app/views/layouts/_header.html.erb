@@ -4,31 +4,45 @@
     <div class="tp-bar">
         <div class="container">
           <div class="row">
-            <!-- logo -->
-            <div class="logo image">
-                <a href="#"><%= image_tag("logo.png", :size=> '110x110')%></a>
-                <a><h1 class="brand" style="color:#fff;">JUNA AMAGARA MINISTRIES</h1></a> 
-            </div>  
-           
-            <!-- counter ends -->
-            <div class="counter">
-                  <p class="lead btn btn-lg btn-block btn-warning ">**Donate**
-                    <a href="#"><%= image_tag("sponsorachild.jpg", :size=> '30x30', :class=> "img-circle")%></a>
-                  </p>
-                <div class="">
-                      <p class="notice"><%= notice %></p>
-                      <p class="alert"><%= alert %></p></div>
-                <div class="event-bx">
-					      <h4><a href="#">Juna Amagara</a></h4>
-                    <ul class="options">
-                    	<li><i class="icon-map-marker"></i>Saving lives in Uganda</li>
-                    </ul>
-                    <p>For $35 per month you support a child to receive quality education, medical care, Spiritual nurturing and Balanced nutrition in a loving and caring environment.</p>
-                    <%= image_tag("sponsorachild.jpg", :size=> '200x200')%>
-                    <div class="event-bx-btm btn btn-warning btn-block">
-                    	<%= link_to "Sponsor a child", root_path %>
-                    </div>
+            <div class="col-md-5">
+              <!-- logo -->
+              <div class="logo image">
+                  <a href="#"><%= image_tag("logo.png", :size=> '110x110')%></a>
+                  <a><h1 class="brand" style="color:#fff;">JUNA AMAGARA MINISTRIES</h1></a> 
+              </div> 
+            </div> 
+
+            <div class="col-md-5">
+               
+                ﻿<div class="alert alert-warning alert-dismissable">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                    ×
+                  </button>
+                  <strong>SAVE LIFE MINISTRIES>>></strong>
+                  Juna Amagara means Save Life. For $35 per month you support a child.
                 </div>
+                <font color="green"><%= notice %></font>
+                <font color="red"><%= alert %></font>
+                
+            </div>
+            <div class="col-md-2">
+              <!-- counter ends -->
+              <div class="counter"><br/>
+                <font class="btn btn-lg btn-warning">Donate <%= image_tag("sponsor.png", :size=> '30x30', :class=> "img-circle")%></font>
+                
+                <div class="event-bx">
+  					      <h4><a href="#">Juna Amagara</a></h4>
+                      <ul class="options">
+                      	<li><i class="icon-map-marker"></i>Saving lives in Uganda</li>
+                      </ul>
+                      <p>For $35 per month you support a child to receive quality education, medical care, Spiritual nurturing and Balanced nutrition in a loving and caring environment.</p>
+                      <%= image_tag("sponsor.png", :size=> '200x200')%>
+                      <div class="event-bx-btm btn btn-warning btn-block">
+                      	<%= link_to "Sponsor a child", root_path %>
+                      </div>
+                  </div>
+              </div>
+            </div>
             </div>
           </div>
 

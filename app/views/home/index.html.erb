@@ -83,16 +83,38 @@
 
 
 
-<article class="section paul">
+<article class="section" style="background-color:wheat">
     <div class="container">
+
+        <div class="row">
+            <header class="heading text-center animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
+                <h2>Our Ministries </h2>
+             </header>
+            <div class="col-md-11 col-sm-12 col-xs-12">
+               <% @ministry.each do |ministry|%>
+                    <div class="col-md-4 col-sm-6 col-xs-6 animated pulse in" data-animation="pulse" data-delay="200">
+                        <div class="thumbnail">
+                            <%= image_tag ministry.avatar(), :class=> "img-circle" %>
+                            <div class="caption"  style="background-color:wheat;">   
+                                <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
+                                        <font size="+1" align="center"><%= ministry.title %></font>
+                                </header>
+                                <hr/>
+                                <p  align="left"  class=""><%= truncate(ministry.description, :length => 30 )%><%= link_to 'read more', faqsnews_news_path%></p>
+                            </div>
+                        </div>
+                    </div>
+                <% end %>
+        </div>
+        </div>
         <header class="heading text-center animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
             <h2>Work in progress</h2>
          </header>
-            <div class="row">
+        <div class="row">
                     <div class="col-lg-11 col-md-11">
                          <div class="row">
                 <% @event.each do |event|%>
-                    <div class="col-lg-4 col-md-4 contents">
+                    <div class="col-lg-4 col-md-4 contents ">
                         <div class="projects projects-list">
                             <ul class="media-list">
                                 
@@ -103,10 +125,10 @@
                                     </figure>
                                     <div class="media-body">
                                         <h4 class="media-heading"><b><%= event.title %></b></h4>
-                                        <p class="" align="left"><%= truncate(event.description, :length => 110 )%>
-                                        </p>
-                                        <p class="label label-warning"><%= link_to 'read more', faqsnews_news_path%>
-                                        </p>
+                                        <small align="left"><%= truncate(event.description, :length => 110 )%>
+                                        </small>
+                                        <b class="btn btn-warning btn-sm"><%= link_to 'read more', faqsnews_news_path%>
+                                        </b>
                                     </div>
                                 </li>
                                 
@@ -117,36 +139,44 @@
                 <% end %>
             </div> 
         
-        <div class="row">
-            <header class="heading text-center animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
-                <h2>Our Ministries </h2>
-             </header>
-            <div class="col-md-11 col-sm-12 col-xs-12">
-               <% @ministry.each do |ministry|%>
-                    <div class="col-md-4 col-sm-6 col-xs-6 animated pulse in" data-animation="pulse" data-delay="200">
-                        <div class="thumbnail">
-                            <%= image_tag ministry.avatar %>
-                            <figcaption>
-                                <a>Donate Now</a>
-                            </figcaption>
-                            <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
-                                    <font><%= ministry.title %></font>
-                            </header>
-                            <p  align="left"  class="well"><%= truncate(ministry.description, :length => 30 )%><%= link_to 'read more', faqsnews_news_path%></p>
-                        </div>
-                    </div>
-                <% end %>
-        </div>
+        
     </div>
 </article>
 
-<article class="section">
+<article class="section bg-theme">
     <div class="container">
 
         <header class="heading text-center animated flipInX in" data-animation="flipInX" data-delay="0">
             <h2 style="color:white">You've helped achieve...</h2>
         </header>
-        <p class="text-center margn-btm-80 animated flipInX in" data-animation="flipInX" data-delay="200"></p>
+        <p class="text-center margn-btm-80 animated flipInX in" data-animation="flipInX" data-delay="200">
+            
+          ﻿<button type="button" class="btn btn-lg btn-warning" data-toggle="popover"
+                   data-content="This is content." title="Title" data-placement="bottom">
+            Improve education
+          </button>
+          <button type="button" class="btn btn-lg btn-warning" data-toggle="popover"
+                  data-content="This is content." title="Title" data-placement="top">
+            Save life of Children
+          </button>
+          <button type="button" class="btn btn-lg btn-warning" data-toggle="popover"
+                  data-content="This is content." title="Title" data-placement="bottom">
+            Feed the poor
+          </button>
+          <button type="button" class="btn btn-lg btn-warning" data-toggle="popover"
+                  data-content="This is content." title="Title" data-placement="top">
+            Improve Health
+          </button>
+
+          <button type="button" class="btn btn-lg btn-warning" data-toggle="popover"
+                  data-content="This is content." title="Title" data-placement="bottom">
+            Train communities
+          </button>
+          <button type="button" class="btn btn-lg btn-warning" data-toggle="popover"
+                  data-content="This is content." title="Title" data-placement="top">
+            Bring Hope to many
+          </button>
+        </p>
               
     </div>
 
