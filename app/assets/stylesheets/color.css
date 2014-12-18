@@ -4,11 +4,13 @@
  * 
  */
 
-a, a:hover, .color-theme, .event-box .text a:hover, .heading h2, .heading h3, .navbar-default .navbar-nav > li > a:hover, .navbar-nav > li:hover > a, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .progress span.current-val, .widget_twitter > ul > li a.tweet-name, .mapbox .widget_contact a:hover, .donor-box .image figcaption a:hover, .options a:hover, .panel-title.active-heading, .progress-stats span.current-val,
+a, a:hover, .color-theme, .event-box .text a:hover, .heading h2, .heading h3,  .progress span.current-val, .widget_twitter > ul > li a.tweet-name, .mapbox .widget_contact a:hover, .donor-box .image figcaption a:hover, .options a:hover, .panel-title.active-heading, .progress-stats span.current-val,
 .team-box .image figcaption a:hover, .widget_categories li:hover:before, .widget_archive li:hover:before {
-	color:#000;
+	color:#884500;
 }
+.navbar-default .navbar-nav > li > a:hover, .navbar-nav > li:hover > a, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
 
+}
 .navbar-default, .dropdown-menu > li > a:hover, .navbar-nav li ul a:hover, .navbar-nav li li:hover > a, .heading h2:before, .heading h2:after, .heading h4:before, .heading h4:after, .site-bottom, .portfolio-box:hover a.more-link, .progress-bar, .btn-primary, .causes-box > figure figcaption .btn-default:hover, .pagination > li > a, .pagination > li > span, .caro-pagination a span, .caro-next:hover, .caro-prev:hover, .btn-default:hover, .highlight, .progress-fill-area .progress-fill, .scroll-up {
 	background-color:#000;
 }
