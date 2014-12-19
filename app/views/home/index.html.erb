@@ -93,15 +93,16 @@
             <div class="col-md-11 col-sm-12 col-xs-12">
                <% @ministry.each do |ministry|%>
                     <div class="col-md-4 col-sm-6 col-xs-6 animated pulse in" data-animation="pulse" data-delay="200">
-                        <div class="caption" style="background-color:#57270A; padding:20px 0px;">
-                            <%= image_tag ministry.avatar(), :class=> "img-rounded", :size => "318x220", :crop => :fill, :align =>"center"%>
-                            <div class="caption">   
-                                <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
-                                        <font size="+1" align="center"><%= ministry.title %></font>
-                                </header>
-                                <hr/>
-                                <p  align="left"  class=""><%= truncate(ministry.description, :length => 30 )%><%= link_to 'read more', faqsnews_news_path%></p>
-                            </div>
+                        <div class="caption" style="background-color:#57270A; padding:20px 0px; text-align:center; color:white;">
+                          <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
+                            <font size="+1" align="center"><b><%= ministry.title.upcase %></b></font>
+                          </header>
+                          <%= image_tag ministry.avatar(), :class=> "img-rounded", :size => "318x220", :crop => :fill, :align =>"center"%>
+                          <div class="caption">   
+
+                              <hr/>
+                              <p class=""><%= truncate(ministry.description, :length => 30 )%><%= link_to 'read more', faqsnews_news_path%></p>
+                          </div>
                         </div>
                     </div>
                 <% end %>
