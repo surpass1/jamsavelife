@@ -117,7 +117,7 @@ iframe {
 	left:0px;
 }
 .section{
-	background-color:rgba(0.1,0.1,0.1,0.3);
+	background-color:#57270A;
 }
 
 .header-home {
@@ -698,7 +698,7 @@ ul.options,
 
 /*** Sections styling ***/
 .section {
-	padding:70px 0px;	
+	padding:20px 0px;	
 }
 /*** parallex image ***/
 .parallex-section,
