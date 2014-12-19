@@ -1,3 +1,4 @@
+
 /*!
  * Helping Hands v.1.0.0
  * Copyright 2014 Artex Solutions.
@@ -24,9 +25,6 @@ a, a:hover, .color-theme, .event-box .text a:hover, .heading h2, .heading h3,  .
 
 .paul{
 	background-color:#eeefff
-}
-.bg-paul{
-	background-color:rgba(0.1,0.1,0.1,0.1);
 }
 
 .dropdown-menu, .navbar-nav li ul, .newsletter-section, .form-control:focus, .footer, .site-header-2 .navbar-nav > li:hover > a, .site-header-2 .navbar-nav > li.active > a {
