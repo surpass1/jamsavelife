@@ -93,9 +93,9 @@
             <div class="col-md-11 col-sm-12 col-xs-12">
                <% @ministry.each do |ministry|%>
                     <div class="col-md-4 col-sm-6 col-xs-6 animated pulse in" data-animation="pulse" data-delay="200">
-                        <div class="caption kawalya">
-                            <%= image_tag ministry.avatar(), :class=> "img-circle" %>
-                            <div class="caption"  style="background-color:wheat;">   
+                        <div class="caption" style="background-color:#57270A; padding:20px 0px;">
+                            <%= image_tag ministry.avatar(), :class=> "img-rounded", :size => "318x220", :crop => :fill, :align =>"center"%>
+                            <div class="caption">   
                                 <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
                                         <font size="+1" align="center"><%= ministry.title %></font>
                                 </header>
@@ -144,7 +144,7 @@
     </div>
 </article>
 
-<article class="kawalya">
+<article style="background-color:#57270A; padding:20px 0px;">
     <div class="container">
 
         <header class="heading text-center animated flipInX in" data-animation="flipInX" data-delay="0">
