@@ -99,9 +99,7 @@
                           </header>
                           <%= image_tag ministry.avatar(), :class=> "img-rounded", :size => "318x220", :crop => :fill, :align =>"center"%>
                           <div class="caption">   
-
-                              <hr/>
-                              <p class=""><%= truncate(ministry.description, :length => 30 )%><%= link_to 'read more', faqsnews_news_path%></p>
+                            <p class=""><%= truncate(ministry.description, :length => 30 )%><%= link_to 'read more', faqsnews_news_path%></p>
                           </div>
                         </div>
                     </div>
