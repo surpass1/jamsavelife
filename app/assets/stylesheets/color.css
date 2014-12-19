@@ -26,6 +26,10 @@ a, a:hover, .color-theme, .event-box .text a:hover, .heading h2, .heading h3,  .
 .paul{
 	background-color:#eeefff
 }
+.kawalya{
+	background-color:#57270A;
+	padding:20px 0px;
+}
 
 .dropdown-menu, .navbar-nav li ul, .newsletter-section, .form-control:focus, .footer, .site-header-2 .navbar-nav > li:hover > a, .site-header-2 .navbar-nav > li.active > a {
 	border-color:#884500;
