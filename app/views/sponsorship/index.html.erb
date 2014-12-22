@@ -1,27 +1,34 @@
 <article class="">
     <div class="container">
+        <div class="row">
         <% @child.each do |sponsored|%>
-            <div class="teams grid-4">
-                <ul>
-                    <li class="animated out" data-animation="fadeInUp" data-delay="100">
-                        <div class="team-box">
-                            <h4 class="well-small" style="background-color:#efefef;"><%= sponsored.name %><span class="badge pull-right">AGE:<%= sponsored.age %></span></h4>
-                            <div class="image-box">
-                                <figure class="image">
-                                    <%= image_tag sponsored.avatar(:medium) %> 
-                                    <figcaption>
-                                        <br/>
-                                        <br/>
-                                        <%= link_to 'Sponsor this child', root_path%>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            
-                            <p class="well" align="left"><%= sponsored.description %></p>
-                        </div>
-                    </li>
+            
+            <div class="col-lg-3">
+                <div class="animated out" data-animation="fadeInUp" data-delay="100">
+                        
+                   
+                    <div class="image-box">
+                        <figure class="image">
+                            <%= image_tag sponsored.avatar(:medium) %> 
+                            <figcaption>
+                                <br/>
+                                <br/>
+                                <%= link_to 'Sponsor this child', root_path%>
+                            </figcaption>
+                        </figure>
+                    </div>
 
-                </ul>
+                    <button type="button" class="btn btn-warning btn-block" data-toggle="collapse" data-target="#demo">
+                      Click for details...
+                    </button>
+                    <div id="demo" class="collapse">
+                        <h4 class="well-small" style="background-color:#efefef;"><%= sponsored.name %><span class="badge pull-right">AGE:<%= sponsored.age %></span>
+                        </h4>
+                        <%= sponsored.description %>
+                    </div>
+
+                </div>            
+                    
             </div>
         <% end %>
     </div>
