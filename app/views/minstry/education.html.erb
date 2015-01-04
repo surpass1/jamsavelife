@@ -1,87 +1,40 @@
+
 <article class="section">
     <div class="container">
         <div class="col-md-9 contents">
             <div class="projects projects-list">
                 <ul class="media-list">
-                    <li class="media animated out" data-animation="bounceIn" data-delay="0">
-                    	<figure class="hover-strip pull-left">
-                    		<a class="pull-left" href="#">
-                            	<img src="images/resource/img-24.jpg" class="media-object" alt="image">
-                            </a>
-                            <div class="date-tag">JAM</div>
-                        </figure>
-                        <div class="media-body">
-                            <h4 class="media-heading"><a href="#">Health and Education</a></h4>
-                        	<ul class="options">
-                            	<li><i class="icon-crosshairs"></i>$1800 / $70,000</li>
-                                <li><i class="icon-map-marker"></i>In UGANDA</li>
-                            </ul>
-                            <p>Cumsociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnisodas dis parturient montes, nascetur ridiculus mus.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a accumsan erat. Etiam et dui lorem.</p><a href="#" class="btn btn-default">Read More</a>
-                        </div>
-                    </li>
-                    <li class="media animated out" data-animation="bounceIn" data-delay="0">
-                    	<figure class="hover-strip pull-left">
-                    		<a class="pull-left" href="#">
-                            	<img src="images/resource/img-24.jpg" class="media-object" alt="image">
-                            </a>
-                            <div class="date-tag">JAM</div>
-                        </figure>
-                        <div class="media-body">
-                            <h4 class="media-heading"><a href="#">Health and Education</a></h4>
-                        	<ul class="options">
-                            	<li><i class="icon-crosshairs"></i>$1800 / $70,000</li>
-                                <li><i class="icon-map-marker"></i>In UGANDA</li>
-                            </ul>
-                            <p>Cumsociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cum sociis natoque penatibus et magnisodas dis parturient montes, nascetur ridiculus mus.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a accumsan erat. Etiam et dui lorem.</p><a href="#" class="btn btn-default">Read More</a>
-                        </div>
-                    </li>
+                    <% @children.each do |h|%>
+                        <li class="media animated bounceIn in" data-animation="bounceIn" data-delay="0">
+                            <figure class="hover-strip pull-left">
+                                <a class="pull-left">
+                                    <%= image_tag h.avatar(:medium)%>
+                                </a>
+                                <div class="date-tag">JAM</div>
+                            </figure>
+                            <div class="media-body">
+                                <h3 class="media-heading"><%= h.title %></h3>
+                                <p><%= h.description %></p>
+                            </div>
+                        </li>
+                    <% end %>
                 </ul>
             </div>
-            
         </div>
         
         <div class="col-md-3 sidebar">
             
-            <div class="widget widget_categories animated out" data-animation="fadeInUp" data-delay="0">
+            <div class="widget widget_categories animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
                 <header class="heading">
                     <h4>Categories</h4>
                 </header>
-				<ul>
-                	<li><a href="#">Active Projects</a>(15)</li>
-                	<li><a href="#">Implemented Projects</a>(12)</li>
-                	<li><a href="#">Help</a>(05)</li>
-                	<li><a href="#">Human</a>(15)</li>
-                	<li><a href="#">Mercy</a>(07)</li>
+                <ul>
+                    <li><a href="#">A</a><i class="icon-user"></i></li>
+                    <li><a href="#">B</a><i class="icon-user"></i></li>
+                    <li><a href="#">C</a><i class="icon-user"></i></li>
+                    <li><a href="#">D</a><i class="icon-user"></i></li>
+                    <li><a href="#">K</a><i class="icon-user"></i></li>
                 </ul>
             </div>
-            
-            <div class="widget widget_featured_posts animated out" data-animation="fadeInUp" data-delay="0">
-                <header class="heading">
-                    <h4>Featured Posts</h4>
-                </header>
-				<ul>
-                	<li>
-                    	<div class="featured-box">
-                        	<figure class="image"><img src="images/resource/img-39.jpg" alt="image"></figure>
-                            <h6>Child, Youth and Family Services</h6>
-                            <p>Cumsociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sagittis lacus vel libero, a augueamet...</p>
-                            <a href="blog-detail.html" class="btn btn-default btn-sm">Read More</a>
-                        </div>
-                    </li>
-                	<li>
-                    	<div class="featured-box">
-                        	<figure class="image"><img src="images/resource/img-40.jpg" alt="image"></figure>
-                            <h6>Childhood / Health</h6>
-                            <p>Cumsociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sagittis lacus vel libero, a augueamet...</p>
-                            <a href="blog-detail.html" class="btn btn-default btn-sm">Read More</a>
-                        </div>
-                    </li>
-                </ul>
-			</div>
-           
         </div>
-        
-    </div>
-</article>
+    </article>
