@@ -1,42 +1,24 @@
-
-
-
 <div class="container">
 
     <div class="comment-area">
-        <h4>Founders</h4>
+        <h3>Amagara News</h3>
         <ul class="user-comments section">
-            <li>
-                <div class="comment-box animated fadeInLeft in" data-animation="fadeInLeft" data-delay="0">
-                    <figure>
-                        <%= image_tag('jam.png', :size => "200x200")%>
-                    </figure> 
-                    <div class="comment-tp">
-                        <strong>John David</strong>
-                        <p>Wednesday, 14 Jan 2014</p>
+            <% @news.each do |f|%>
+                <li>
+                    <div class="comment-box animated fadeInLeft in" data-animation="fadeInLeft" data-delay="0">
+                        <figure>
+                            <%= image_tag f.avatar(:medium) %>
+                        </figure>
+                        <div class="comment-tp">
+                            <p><%= f.title %></p>
+                        </div>
+                        <div class="comment-bt">
+                            <p><%= f.description %> </p>
+                        </div> 
                     </div>
-                    <div class="comment-bt">
-                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. </p>
-                        <a class="comment-reply-link" href="#">Reply</a>
-                    </div>
-                </div>
-                
-            </li>  
-            <li>
-                <div class="comment-box animated fadeInLeft in" data-animation="fadeInLeft" data-delay="0">
-                    <figure>
-                        <%= image_tag('sponsor.png', :size => "200x200")%>
-                    </figure> 
-                    <div class="comment-tp">
-                        <strong>John David</strong>
-                        <p>Wednesday, 14 Jan 2014</p>
-                    </div>
-                    <div class="comment-bt">
-                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. </p>
-                        <a class="comment-reply-link" href="#">Reply</a>
-                    </div>
-                </div>
-            </li>
+                    
+                </li>
+            <% end %>  
             
         </ul>
     </div>
