@@ -39,7 +39,11 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuildere
 gem 'jbuilder', '~> 2.0'
-# bundle exec rake doc:rails generates the API under doc/api.
+# bundle exec rake doc:rails generates the API underbun doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'paperclip'
+gem 'kaminari'
+gem 'bootstrap-kaminari-views'
+
+
 ruby '2.1.2'
