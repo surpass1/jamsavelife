@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'contact/index'
+
+  get 'mission/index'
+
   get 'sponsorship/index'
 
   get 'faqsnews/news'
