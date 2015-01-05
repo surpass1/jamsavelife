@@ -43,7 +43,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'paperclip'
 gem 'kaminari'
-gem 'bootstrap-kaminari-views'
+gem 'kaminari-bootstrap'
 
 
 ruby '2.1.2'

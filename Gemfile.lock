@@ -30,9 +30,6 @@ GEM
     addressable (2.3.6)
     arel (5.0.1.20140414130214)
     bcrypt (3.1.9)
-    bootstrap-kaminari-views (0.0.5)
-      kaminari (>= 0.13)
-      rails (>= 3.1)
     builder (3.2.2)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -84,6 +81,9 @@ GEM
     kaminari (0.16.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
+    kaminari-bootstrap (3.0.1)
+      kaminari (>= 0.13.0)
+      rails
     launchy (2.4.2)
       addressable (~> 2.3)
     less (2.5.1)
@@ -207,13 +207,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-kaminari-views
   coffee-rails (~> 4.0.0)
   devise
   heroku
   jbuilder (~> 2.0)
   jquery-rails
   kaminari
+  kaminari-bootstrap
   less-rails
   paperclip
   pg
