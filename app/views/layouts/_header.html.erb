@@ -21,8 +21,8 @@
                   <strong>SAVE LIFE MINISTRIES>>></strong>
                   Juna Amagara means Save Life. For $35 per month you support a child.
                 </div>
-                <font color="green"><%= notice %></font>
-                <font color="red"><%= alert %></font>
+                <%if notice %><font color="green"><%= notice %></font><% end %>
+                <%if alert %><font color="red"><%= alert %></font><% end %>
                 
             </div>
             <div class="col-md-2">
@@ -36,10 +36,7 @@
                       	<li><i class="icon-map-marker"></i>Saving lives in Uganda</li>
                       </ul>
                       <p>For $35 per month you support a child to receive quality education, medical care, Spiritual nurturing and Balanced nutrition in a loving and caring environment.</p>
-                      <% @advert.each do |event|%>
-                        <%= image_tag event.avatar, :size=>"200x200", :alt=>"image" %>
-                      <% end %>
-                      	<%= link_to "Sponsor a child", root_path %>
+                         	<%= link_to "Sponsor a child", root_path %>
                       </div>
                   </div>
               </div>
