@@ -26,7 +26,7 @@
 		}
 
 		.carousel {
-		    height: 200px;
+		    height: 230px;
 		    overflow: hidden;
 		    background-color: none;
 		    background-position:center center;
@@ -35,6 +35,42 @@
 		    -moz-background-size:cover;
 		    -webkit-background-size:cover;
 		}
+		.news-demo {
+			  background: #fff;
+			  padding: 20px;
+			}
+
+			.news-demo h1 {
+			  text-align: center;
+			  font-family: Arial, sans-serif;
+			  color: #777;
+			  margin-bottom: 40px;
+			}
+
+			.news-demo .p {
+			  text-align: center;
+			  font-family: Arial, sans-serif;
+			  font-size: 22px;
+			  margin-top: 70px;
+			}
+
+			.news-demo .p ~ p {
+			  margin-top: 0;
+			}
+
+			.news-demo .p a {
+			  text-decoration: underline;
+			}
+
+			.news-demo .p a:hover {
+			  color: red;
+			}
+			
+			.carousel img {
+			  min-width: 100%;
+			  
+			}
+
 	  </style>
     </head>
 	<body>
@@ -47,15 +83,22 @@
 			  fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));</script>
 		
-		<%= render :partial => 'layouts/header' %>
-		<% if notice %><p class="notice"><%= notice %></p> <% end %>
-        <% if alert %><p class="alert"><%= alert %></p><% end %>
-
-		<%= yield %>
+			<%= render :partial => 'layouts/header' %>
+			<%= yield %>
 		</div>
 			
 		<%= render :partial => 'layouts/footer' %>
-		
+		<script>
+		    var _gaq = _gaq || [];
+		    _gaq.push(['_setAccount', 'UA-1965499-1']);
+		    _gaq.push(['_trackPageview']);
+
+		    (function() {
+		      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		    })();
+		  </script>
 		﻿<script>
 		  $('[data-toggle="popover"]').popover();
 		</script>

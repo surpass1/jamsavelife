@@ -4,15 +4,32 @@
             <div class="col-md-7 col-lg-7" style="">
                 <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
                     <h2 style="color:#fff;">Juna Amagara Ministries</h2>
+
                 </header>
+
+
                 <p>
-                    The mission of this ministry is to raise up and equip children in Uganda with the tools they need to become leaders within their community.  It is our vision to empower their personal and spiritual growth by providing children with safe shelter, quality education, balanced nutrition, health education and vocational training
+                  <div class="counter">
+                    <marquee behavior="alternate"><font class="">Welcome to Jua Amagara Ministries. Pass the mouse by me and see this<%= image_tag("logo.png", :size=> '30x30', :class=> "img-circle")%></font></marquee>
+                  
+                      <div class="event-bx">
+                        <h4><a href="#">Juna Amagara</a></h4>
+                        <ul class="options">
+                          <li><i class="icon-map-marker"></i>Saving lives in Uganda</li>
+                        </ul>
+                        <p>
+                          For $35 per month you support a child to receive quality education, medical care, Spiritual nurturing and Balanced nutrition in a loving and caring environment.
+                        </p>
+                            <%= link_to "Sponsor a child", root_path %>
+                      </div>
+                  </div>
+                    The mission of this ministry is to raise up and equip children in Uganda with the tools they need to become leaders within their community.  It is our vision to empower their personal and spiritual growth by providing children with safe shelter, quality education, balanced nutrition, health education and vocational training 
+                    
+                
                 </p>
-                <button class="btn"><a class="">Click to watch 10TH universary video</a></button>
-            </div>
-            
-            <div class="col-md-5 col-lg-5" style="background-color:#884500;">
-               
+
+                  
+
                 <div class="panel panel-default">
                     <div class="panel-body">
                     
@@ -49,9 +66,78 @@
                     <a class="right carousel-control" href="#MyCarousel" data-slide="next">
                       <span class="icon-next"></span>
                     </a>
-                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+            
+            <div class="col-md-5 col-lg-5" style="background-color:#884500;">
+              <h3>JAM Blessing Corner &raquo; &raquo; Click and see</h3>
+              <div class="news-holder cf">
+              <ul class="news-headlines" style="background-color:#57270A;">
+                <li class="selected active">&raquo;100 red bicycles stolen from local bike store</li>
+                <li>&raquo;New leash laws in effect for floppy-eared dogs</li>
+                <li>&raquo;Insider: Can palm trees be saved?</li>
+                <li>&raquo;Fresh recipes to titillate the taste buds</li>
+                <li>&raquo;Truck inspections under way for the metropolitan area</li>
+                <li>&raquo;Are the beaches safe for swimming this year?</li>
+                <!-- li.highlight gets inserted here -->
+              </ul>
 
+              <div class="news-preview">
+
+                <div class="news-content top-content">
+                  <img src="http://cdn.impressivewebs.com/news1.jpg">
+                  <p><a href="#">100 red bicycles stolen from local bike store</a></p>
+
+                  <p>A hundred red bicycles were stolen from under our noses yesterday, and nobody knows what went wrong.</p>
+                </div><!-- .news-content -->
+
+                <div class="news-content">
+                  <img src="http://cdn.impressivewebs.com/news2.jpg">
+                  <p><a href="#">New leash laws in effect for floppy-eared dogs</a></p>
+
+                  <p>Ears on dogs can be a tricky thing. Find out more about this amazing story and why these dogs are a nuisance.</p>
+                </div><!-- .news-content -->
+
+                <div class="news-content">
+                  <img src="http://cdn.impressivewebs.com/news3.jpg">
+                  <p><a href="#">Insider: Can palm trees be saved?</a></p>
+
+                  <p>Ah, the palm tree. It feeds us, it shades us, it does whatever we ask. We should think about it more deeply.</p>
+                </div><!-- .news-content -->
+
+                <div class="news-content">
+                  <img src="http://cdn.impressivewebs.com/news4.jpg">
+                  <p><a href="#">Fresh recipes to titillate the taste buds</a></p>
+
+                  <p>Food is great. These recipes will make you appreciate food as if it were even greater than great. It will be super great.</p>
+                </div><!-- .news-content -->
+
+                <div class="news-content">
+                  <img src="http://cdn.impressivewebs.com/news5.jpg">
+                  <p><a href="#">Truck inspections under way for the metropolitan area</a></p>
+
+                  <p>The Sherrif's department has put out an APB on these trucks. You know, this is the kind of thing that only happens in small towns.</p>
+                </div><!-- .news-content -->
+
+                <div class="news-content">
+                  <img src="http://cdn.impressivewebs.com/news6.jpg">
+                  <p><a href="#">Are the beaches safe for swimming this year?</a></p>
+
+                  <p>Giant orange pedal boats have been spotted at various beaches. In this report we tell you some ridiculous precautions to take.</p>
+                </div><!-- .news-content -->
+
+              </div><!-- .news-preview -->
+
+            </div><!-- .news-holder  and begining of the modal-->
+
+
+              <button class="btn btn-block"><a class="">Click to watch 10TH universary video</a></button>    
+          
+
+
+          </div>
         </div>
     </div>
 </div>  
@@ -59,7 +145,7 @@
 <article style="background-color:#57270A; padding:20px 0px;">
     <div class="container">
         <div class="row">
-            <div class="col-md-11">
+            <div class="col-md-12">
                 <div class="testimonials-section">
                     <div class="caro-fade animated flipInX in" data-animation="flipInX" data-delay="0">
                         <div class="testimonials">
@@ -90,7 +176,7 @@
             <header class="heading text-center animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
                 <h2>Our Ministries </h2>
              </header>
-            <div class="col-md-11 col-sm-12 col-xs-12">
+            <div class="col-md-12 col-sm-12 col-xs-12">
                <% @ministry.each do |ministry|%>
                     <div class="col-md-4 col-sm-6 col-xs-6 animated pulse in" data-animation="pulse" data-delay="200">
                         <div class="caption" style="background-color:#57270A; padding:20px 0px; text-align:center; color:white;">
@@ -111,7 +197,7 @@
        </header>
         
         <div class="row">
-          <div class="col-lg-11 col-md-11">
+          <div class="col-lg-12 col-md-12">
               <div class="row">
                 <% @event.each do |event|%>
                     <div class="col-lg-4 col-md-4 contents ">
