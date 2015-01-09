@@ -132,5 +132,23 @@
 				
 		    });
 		</script>
+
+		 <script>
+    $(document).ready(function () {
+	$("#ticker1").NewsTicker({
+	    interval: 8000,
+	    pauseOnHover: false,
+	    startSlide: 3
+	});
+	
+	$("#ticker2").NewsTicker({
+	    direction: "up",
+	    easing: "easeOutBounce",
+	    interval: 8000,
+	    speed: 1000
+	});
+    });
+    </script>
+
 	</body>
 </html>
