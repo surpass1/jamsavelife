@@ -11,76 +11,51 @@
                 <p>
                   
                     The mission of this ministry is to raise up and equip children in Uganda with the tools they need to become leaders within their community. 
-                    <button type="button" class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#demo">
-                      Read more...
-                    </button>
-                    <div id="demo" class="collapse">
-                        It is our vision to empower their personal and spiritual growth by providing children with safe shelter, quality education, balanced nutrition, health education and vocational training 
-                    </div>               
+                    It is our vision to empower their personal and spiritual growth by providing children with safe shelter, quality education, balanced nutrition, health education and vocational training 
                     
                 
                 </p>
+                <!-- HIv section -->
+                  <div class="testimonials-section">
+                    <div class="caro-fade animated flipInX in" data-animation="flipInX" data-delay="0">
 
-                  
-
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                    
-                    <div class="counter">
-                      <marquee behavior="alternate" class="btn-warning"><font size="+1" class="badge">&raquo;&raquo;&raquo;Click me to see, how you can volunteer, support or change the world with this ministry &raquo;&raquo;&raquo;<%= image_tag("logo.png", :size=> '30x30', :class=> "img-circle")%></font></marquee>
-                    
-                        <div class="event-bx">
-                          <h4><a href="#">Juna Amagara</a></h4>
-                          <ul class="options">
-                            <li><i class="icon-map-marker"></i>Saving lives in Uganda</li>
-                          </ul>
-                          <p>
-                            For $35 per month you support a child to receive quality education, medical care, Spiritual nurturing and Balanced nutrition in a loving and caring environment.
-                          </p>
-                              <%= link_to "Sponsor a child", root_path %>
+                      <div class="testimonials">
+                            <figure class="image img-rounded">
+                                <%= image_tag("sponsor.png", :size => "180x120",:class=>"img-circle")%>
+                            </figure>
+                            <h4 class="color-theme">A Ministry of Hope for AIDS Orphans in Uganda</h4>
+                            
+                            <p align="left"> 
+                                The HIV/AIDS epidemic is destroying families and entire cultures throughout Africa.  But in Uganda, there is hope. This East African Republic long ago built a coalition of 
+                                <button type="button" class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#amagara">
+                                  Read more...
+                                </button>
+                                <div id="amagara" class="collapse" align="left">
+                                  government, churches and schools that has worked to dramatically slow the spread of HIV/AIDS and offer relief to infected victims. 
+                                  More than a million people have died here since the disease began, leaving over 1.5 million children without parents.
+                                  Though Ugandans have taken in more than 700,000 orphans as their own children, some 800,000 are left to care for themselves. Juna Amagara Ministries was founded in 2004 to help these children grow in Christ to become healthy, productive members of society. Juna Amagara means "Save Life."   
+                                </div>
+                             
+                            </p>
                         </div>
                     </div>
 
-
-                    <div id="MyCarousel" class="carousel slide">
-                    <ol class="carousel-indicators">
-                      <li data-target="#MyCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#MyCarousel" data-slide-to="1"></li>
-                      <li data-target="#MyCarousel" data-slide-to="2"></li>
-                      <li data-target="#MyCarousel" data-slide-to="3"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <%= image_tag("banner.png", :class => "img-circle")%>
-                         <div class="carousel-caption right-caption">Sponsor a child</div>
+                      <div class="counter"  style="width:655px;">
+                        <marquee behavior="alternate" class="btn-warning"><font size="+2" class="badge badge-info"><h4>Click here before you continue, &raquo;&raquo;Find more exiting involuements<%= image_tag("logo.png", :size=> '30x30', :class=> "img-circle")%></h4></font></marquee>
+                      
+                          <div class="event-bx">
+                            <h4><a href="#">Juna Amagara</a></h4>
+                            <ul class="options">
+                              <li><i class="icon-map-marker"></i>Saving lives in Uganda</li>
+                            </ul>
+                            <p>
+                              For $35 per month you support a child to receive quality education, medical care, Spiritual nurturing and Balanced nutrition in a loving and caring environment.
+                            </p>
+                                <%= link_to "Sponsor a child", root_path %>
+                          </div>
                       </div>
-                      <div class="item">
-                        <%= image_tag("banner.png", :class => "img-circle")%>
-                        <div class="carousel-caption right-caption">Make a donation</div>
-                      </div>
-                      <div class="item">
-                        <%= image_tag("banner.png", :class => "img-circle")%>
-                        <div class="carousel-caption right-caption">Raise a great generation</div>
-                      </div>
-                      <div class="item">
-                        <%= image_tag("banner.png", :class => "img-circle")%>
-                        <div class="carousel-caption right-caption">Feed the hungry and help the poor</div>
-                      </div>
-
-                
-                    </div>
-                    <a class="left carousel-control" href="#MyCarousel" data-slide="prev">
-                      <span class="icon-prev"></span>
-                    </a>
-                    <a class="right carousel-control" href="#MyCarousel" data-slide="next">
-                      <span class="icon-next"></span>
-                    </a>
+                  </div>
                 </div>
-
-                  
-              </div>
-            </div>
-          </div>
             
             <div class="col-md-5 col-lg-5" style="background-color:#884500;">
                              
@@ -117,53 +92,58 @@
                 <br/><br/>
                 <div class="panel panel-warning">
                 <div class="panel-heading"> <span class="glyphicon glyphicon-list-alt"></span><b>Saving Life in action &raquo;</b></div>
-                <div class="panel-body">
-                <div class="row">
-                <div class="col-xs-12">
-                <ul class="demo1">
-                <li class="news-item">
-                <table cellpadding="4">
-                <tr>
-                <td><img src="images/1.png" width="60" class="img-circle" /></td>
-                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                </tr>
-                </table>
-                </li>
-                <li class="news-item">
-                <table cellpadding="4">
-                <tr>
-                <td><img src="images/2.png" width="60" class="img-circle" /></td>
-                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                </tr>
-                </table>
-                </li>
-                <li class="news-item">
-                <table cellpadding="4">
-                <tr>
-                <td><img src="images/6.png" width="60" class="img-circle" /></td>
-                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                </tr>
-                </table>
-                </li>
-                <li class="news-item">
-                <table cellpadding="4">
-                <tr>
-                <td><img src="images/7.png" width="60" class="img-circle" /></td>
-                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                </tr>
-                </table>
-                </li>
-                </ul>
-                </div>
-                </div>
-                </div>
-                <div class="panel-footer"> </div>
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <ul class="demo1">
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><%= image_tag("logo.png", :class=>"img-circle", :size=>"100x100")%></td>
+                                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... 
+                                      <button type="button" class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#demo">
+                                        Read more...
+                                      </button>
+                                      <div id="demo" class="collapse">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
+                                      </div>               
+                                      
+                                  </td>
+                                </tr>
+                              </table>
+                            </li>
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td<%= image_tag("logo.png", :class=>"img-circle", :size=>"100x100")%></td>
+                                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><%= image_tag("logo.png", :class=>"img-circle", :size=>"100x100")%></td>
+                                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><%= image_tag("logo.png", :class=>"img-circle", :size=>"100x100")%></td>
+                                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                          </ul>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="panel-footer"> </div>
                 </div>
               
-
-
-
-              <br/><button class="btn btn-xs btn-warning btn-block"><a class="">Click to watch 10TH universary video</a></button>    
+              <button class="btn btn-xs btn-warning btn-block"><a class="">Click to watch 10TH universary video</a></button>    
           
 
 
@@ -176,28 +156,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="testimonials-section">
-                    <div class="caro-fade animated flipInX in" data-animation="flipInX" data-delay="0">
-                        <div class="testimonials">
-                            <figure class="image img-rounded">
-                                <%= image_tag("logo.png")%>
-                            </figure>
-                            <h4 class="color-theme">A Ministry of Hope for AIDS Orphans in Uganda</h4>
-                            
-                            <p align="left"> 
-                            The HIV/AIDS epidemic is destroying families and entire cultures throughout Africa.  But in Uganda, there is hope. This East African Republic long ago built a coalition of government, churches and schools that has worked to dramatically slow the spread of HIV/AIDS and offer relief to infected victims. More than a million people have died here since the disease began, leaving over 1.5 million children without parents.
-                            <button type="button" class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#amagara">
-                              Read more...
-                            </button>
-                            <div id="amagara" class="collapse">
-                              Though Ugandans have taken in more than 700,000 orphans as their own children, some 800,000 are left to care for themselves. Juna Amagara Ministries was founded in 2004 to help these children grow in Christ to become healthy, productive members of society. Juna Amagara means "Save Life."   
-                            </div>
-                             
-                            </p>
-                        </div>
-                    </div>
-           
-                </div>
+
             </div>
         </div>
     </div>  
@@ -278,84 +237,46 @@
                    data-content="This is content." title="Title" data-placement="bottom">
             Improve education
           </button>
-          <div id="content">
 
-        <h1>jQuery NewsTicker</h1>
-  
-  <p>
-      The text below will change at 3 seconds intervals.
-  </p>
+          <div class="panel panel-default">
+                    <div class="panel-body">
+                    
+                    
 
-        <ul id="ticker1">
-      <li>
-    <strong>Titolo Lorem Ipsum 1</strong>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit, ante id porttitor faucibus, odio eros pellentesque sapien, at consectetur mi nibh at massa.
-    </p>
-      </li>
-      <li>
-    <strong>Titolo Lorem Ipsum 2</strong>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit, ante id porttitor faucibus, odio eros pellentesque sapien, at consectetur mi nibh at massa.
-    </p>
-      </li>
-      <li>
-    <strong>Titolo Lorem Ipsum 3</strong>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit, ante id porttitor faucibus, odio eros pellentesque sapien, at consectetur mi nibh at massa.
-    </p>
-      </li>
-      <li>
-    <strong>Titolo Lorem Ipsum 4</strong>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit, ante id porttitor faucibus, odio eros pellentesque sapien, at consectetur mi nibh at massa.
-         </p>
-      </li>
-      <li>
-    <strong>Titolo Lorem Ipsum 5</strong>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit, ante id porttitor faucibus, odio eros pellentesque sapien, at consectetur mi nibh at massa.
-    </p>
-      </li>
-  </ul>
-  
-  <ul id="ticker2">
-      <li>
-    <strong>Titolo Lorem Ipsum 1</strong>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit, ante id porttitor faucibus, odio eros pellentesque sapien, at consectetur mi nibh at massa.
-    </p>
-      </li>
-      <li>
-    <strong>Titolo Lorem Ipsum 2</strong>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit, ante id porttitor faucibus, odio eros pellentesque sapien, at consectetur mi nibh at massa.
-    </p>
-      </li>
-      <li>
-    <strong>Titolo Lorem Ipsum 3</strong>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit, ante id porttitor faucibus, odio eros pellentesque sapien, at consectetur mi nibh at massa.
-    </p>
-      </li>
-      <li>
-    <strong>Titolo Lorem Ipsum 4</strong>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit, ante id porttitor faucibus, odio eros pellentesque sapien, at consectetur mi nibh at massa.
-         </p>
-      </li>
-      <li>
-    <strong>Titolo Lorem Ipsum 5</strong>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit, ante id porttitor faucibus, odio eros pellentesque sapien, at consectetur mi nibh at massa.
-    </p>
-      </li>
-  </ul>
-  
-    </div>
+                    <div id="MyCarousel" class="carousel slide">
+                    <ol class="carousel-indicators">
+                      <li data-target="#MyCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#MyCarousel" data-slide-to="1"></li>
+                      <li data-target="#MyCarousel" data-slide-to="2"></li>
+                      <li data-target="#MyCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <%= image_tag("banner.png", :class => "img-circle")%>
+                         <div class="carousel-caption right-caption">Sponsor a child</div>
+                      </div>
+                      <div class="item">
+                        <%= image_tag("banner.png", :class => "img-circle")%>
+                        <div class="carousel-caption right-caption">Make a donation</div>
+                      </div>
+                      <div class="item">
+                        <%= image_tag("banner.png", :class => "img-circle")%>
+                        <div class="carousel-caption right-caption">Raise a great generation</div>
+                      </div>
+                      <div class="item">
+                        <%= image_tag("banner.png", :class => "img-circle")%>
+                        <div class="carousel-caption right-caption">Feed the hungry and help the poor</div>
+                      </div>
+
+                
+                    </div>
+                    <a class="left carousel-control" href="#MyCarousel" data-slide="prev">
+                      <span class="icon-prev"></span>
+                    </a>
+                    <a class="right carousel-control" href="#MyCarousel" data-slide="next">
+                      <span class="icon-next"></span>
+                    </a>
+                </div>
           
-        </p>
-              
-    </div>
 
 </article>          
