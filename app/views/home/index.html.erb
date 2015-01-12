@@ -111,46 +111,19 @@
                       <div class="row">
                         <div class="col-md-12 col-xs-12">
                           <ul class="demo1">
-                            <li class="news-item">
-                              <table cellpadding="4">
-                                <tr>
-                                  <td><%= image_tag("logo.png", :class=>"img-circle", :size=>"100x100")%></td>
-                                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... 
-                                      <button type="button" class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#demo">
-                                        Read more...
-                                      </button>
-                                      <div id="demo" class="collapse">
-                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim...
-                                      </div>               
-                                      
-                                  </td>
-                                </tr>
-                              </table>
-                            </li>
-                            <li class="news-item">
-                              <table cellpadding="4">
-                                <tr>
-                                  <td<%= image_tag("logo.png", :class=>"img-circle", :size=>"100x100")%></td>
-                                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                                </tr>
-                              </table>
-                            </li>
-                            <li class="news-item">
-                              <table cellpadding="4">
-                                <tr>
-                                  <td><%= image_tag("logo.png", :class=>"img-circle", :size=>"100x100")%></td>
-                                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                                </tr>
-                              </table>
-                            </li>
-                            <li class="news-item">
-                              <table cellpadding="4">
-                                <tr>
-                                  <td><%= image_tag("logo.png", :class=>"img-circle", :size=>"100x100")%></td>
-                                  <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in venenatis enim... <a href="#">Read more...</a></td>
-                                </tr>
-                              </table>
-                            </li>
+                            <% @ministry.each do |ministry|%>
+                              <li class="news-item">
+                                <table cellpadding="4">
+                                  <tr>
+                                    <td><%= image_tag ministry.avatar(), :class=> "img-circle", :size => "83x83", :crop => :fill, :align =>"center"%></td>
+                                    <td><%= truncate(ministry.description, :length => 60 )%><%= link_to 'read more', faqsnews_news_path, :class=>"btn btn-warning btn-xs"%> 
+                                        
+                                    </td>
+                                  </tr>
+                                </table>
+                              </li>
+                            <% end %>
+                             
                           </ul>
                           </div>
                         </div>
@@ -178,12 +151,13 @@
 
                 <% @ministry.each do |ministry|%>
                   <div class="col-md-4 col-sm-6 col-xs- 6 animated pulse in" data-animation="pulse" data-delay="200">
-                        <div class="caption" style="padding:20px 0px; text-align:center; color:#000;">
-                          <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
-                            <font><b><%= ministry.title.upcase %></b></font>
-                          </header>
+                        <div class="caption" style="padding:20px 0px; color:#000;">
+                          
                           <%= image_tag ministry.avatar(), :class=> "img-rounded", :size => "318x220", :crop => :fill, :align =>"center"%>
-                          <div class="caption">   
+                          <div class="caption"> 
+                            <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
+                              <%= ministry.title.upcase %>
+                            </header>  
                             <p class=""><%= truncate(ministry.description, :length => 30 )%><%= link_to 'read more', faqsnews_news_path%></p>
                           </div>
                         </div>
@@ -270,7 +244,7 @@
           </div>
         </div>  
           <div class="col-md-6">
-            gvsac cdscgdgcvj
+            <h2>You have helped us achieve</h2>
           </div>
   
 </div>  
