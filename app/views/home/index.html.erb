@@ -26,17 +26,22 @@
                             <h4 class="color-theme">A Ministry of Hope for AIDS Orphans in Uganda</h4>
                             
                             <p align="left"> 
-                                The HIV/AIDS epidemic is destroying families and entire cultures throughout Africa.  But in Uganda, there is hope. This East African Republic long ago built a coalition of 
+                                The HIV/AIDS epidemic is destroying families and entire cultures throughout Africa.  But in Uganda, there is hope. This East African Republic long ago built a coalition of government, 
                                 <button type="button" class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#amagara">
                                   Read more...
                                 </button>
                                 <div id="amagara" class="collapse" align="left">
-                                  government, churches and schools that has worked to dramatically slow the spread of HIV/AIDS and offer relief to infected victims. 
+                                  churches and schools that has worked to dramatically slow the spread of HIV/AIDS and offer relief to infected victims.
                                   More than a million people have died here since the disease began, leaving over 1.5 million children without parents.
                                   Though Ugandans have taken in more than 700,000 orphans as their own children, some 800,000 are left to care for themselves. Juna Amagara Ministries was founded in 2004 to help these children grow in Christ to become healthy, productive members of society. Juna Amagara means "Save Life."   
                                 </div>
                              
                             </p>
+
+                                  <button class="btn btn-warning btn-block"><a class="">Click to watch 10TH universary video</a></button>    
+          
+
+
                         </div>
                     </div>
 
@@ -80,7 +85,7 @@
                             jvsc cdcdc dcd cdhcvddc nmdchb dcmdvcnb,dcbj
                           </p>
                           <p>
-                              <div class="fb-comments" data-href="https://www.facebook.com/JunaAmagara?skip_nax_wizard=true&amp;ref_type=logout_gear" data-width="300x300" data-numposts="4" data-colorscheme="light"></div>
+                              <div class="fb-comments" data-href="https://www.facebook.com/JunaAmagara?skip_nax_wizard=true&amp;ref_type=logout_gear" data-width="550x300" data-numposts="4" data-colorscheme="light"></div>
                           </p>
                         </div>
                         <div class="modal-footer">
@@ -148,27 +153,13 @@
                       </div>
                     <div class="panel-footer"> </div>
                 </div>
-              
-              <button class="btn btn-xs btn-warning btn-block"><a class="">Click to watch 10TH universary video</a></button>    
-          
-
-
+             
           </div>
         </div>
     </div>
 </div>  
-<br/><br/>
-<article style="background-color:#57270A; padding:20px 0px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <object width=”500″ height=”281″><param name=”allowfullscreen” value=”true” /><param name=”allowscriptaccess” value=”always” /><param name=”movie” value=”http://vimeo.com/moogaloop.swf?clip_id=5367093&server=vimeo.com&show_title=1&show_byline=1&show_portrait=0&color=00adef&fullscreen=1″ /><embed src=”http://vimeo.com/moogaloop.swf?clip_id=5367093&server=vimeo.com&show_title=1&show_byline=1&show_portrait=0&color=00adef&fullscreen=1″ type=”application/x-shockwave-flash” allowfullscreen=”true” allowscriptaccess=”always” width=”500″ height=”281″></embed></object><p><a href=”http://vimeo.com/5367093″>Prisoner of Rules – art video</a> from <a href=”http://vimeo.com/rudolfboogerman”>Rudolf Boogerman</a> on <a href=”http://vimeo.com”>Vimeo</a>.</p>
-            </div>
-        </div>
-    </div>  
-        
-</article>
 
+<br/><br/><br>
 
 
 <article class="section" style="background-color:wheat">
@@ -178,9 +169,9 @@
             <header class="heading text-center animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
                 <h2>Our Ministries </h2>
              </header>
-            <div class="col-md-12 col-sm-12 col-xs-12 well">
+            <div class="col-md-12 col-sm-12 col-xs-12" style="background-color:black">
                <% @ministry.each do |ministry|%>
-                    <div class="col-md-4 col-sm-6 col-xs-6 animated pulse in" data-animation="pulse" data-delay="200">
+                    <div class="col-md-4 col-sm-6 col-xs- 6 animated pulse in" data-animation="pulse" data-delay="200">
                         <div class="caption" style="padding:20px 0px; text-align:center; color:white;">
                           <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
                             <font align="center"><b><%= ministry.title.upcase %></b></font>
@@ -226,63 +217,53 @@
                     </div>
                 <% end %>
             </div> 
-        
-        
-    </div>
-</article>
+        </div>
+  </article>
+
 
 <article style="background-color:#57270A; padding:20px 0px;">
     <div class="container">
-
-        <header class="heading text-center animated flipInX in" data-animation="flipInX" data-delay="0">
-            <h2 style="color:white">You've helped achieve...</h2>
-        </header>
-        <p class="text-center margn-btm-80 flipInX in" data-animation="flipInX" data-delay="200">
-            
-          ﻿<button type="button" class="btn btn-lg btn-warning" data-toggle="popover"
-                   data-content="This is content." title="Title" data-placement="bottom">
-            Improve education
-          </button>
-
+        <div class="row">
+          <div class="col-md-6">
           <div class="panel panel-default">
-                    <div class="panel-body">
-                    
-                    
+          <div class="panel-body">
+            <div id="MyCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+              <li data-target="#MyCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#MyCarousel" data-slide-to="1"></li>
+              <li data-target="#MyCarousel" data-slide-to="2"></li>
+              <li data-target="#MyCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <%= image_tag("sponsorchild.png", :class => "")%>
+                 <div class="carousel-caption right-caption">Sponsor a child</div>
+              </div>
+              <div class="item">
+                <%= image_tag("banner.png", :class => "img-circle")%>
+                <div class="carousel-caption right-caption">Make a donation</div>
+              </div>
+              <div class="item">
+                <%= image_tag("banner.png", :class => "img-circle")%>
+                <div class="carousel-caption right-caption">Raise a great generation</div>
+              </div>
+              <div class="item">
+                <%= image_tag("banner.png", :class => "img-circle")%>
+                <div class="carousel-caption right-caption">Feed the hungry and help the poor</div>
+              </div>
 
-                    <div id="MyCarousel" class="carousel slide">
-                    <ol class="carousel-indicators">
-                      <li data-target="#MyCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#MyCarousel" data-slide-to="1"></li>
-                      <li data-target="#MyCarousel" data-slide-to="2"></li>
-                      <li data-target="#MyCarousel" data-slide-to="3"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <%= image_tag("banner.png", :class => "img-circle")%>
-                         <div class="carousel-caption right-caption">Sponsor a child</div>
-                      </div>
-                      <div class="item">
-                        <%= image_tag("banner.png", :class => "img-circle")%>
-                        <div class="carousel-caption right-caption">Make a donation</div>
-                      </div>
-                      <div class="item">
-                        <%= image_tag("banner.png", :class => "img-circle")%>
-                        <div class="carousel-caption right-caption">Raise a great generation</div>
-                      </div>
-                      <div class="item">
-                        <%= image_tag("banner.png", :class => "img-circle")%>
-                        <div class="carousel-caption right-caption">Feed the hungry and help the poor</div>
-                      </div>
-
-                
-                    </div>
-                    <a class="left carousel-control" href="#MyCarousel" data-slide="prev">
-                      <span class="icon-prev"></span>
-                    </a>
-                    <a class="right carousel-control" href="#MyCarousel" data-slide="next">
-                      <span class="icon-next"></span>
-                    </a>
-                </div>
-          
-
-</article>          
+        
+            </div>
+            <a class="left carousel-control" href="#MyCarousel" data-slide="prev">
+              <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#MyCarousel" data-slide="next">
+              <span class="icon-next"></span>
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>  
+        
+</article>
