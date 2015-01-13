@@ -38,7 +38,7 @@
                              
                             </p>
 
-                            <button class="btn btn-warning btn-block"><a class="">Click to watch 10TH universary video</a></button> 
+                            <button class="btn btn-warning btn-block"><a class="" href="http://vimeo.com/88617114">Click to watch 10TH universary video</a></button> 
 
                             <div class="fb-like" data-href="https://www.facebook.com/JunaAmagara?skip_nax_wizard=true&amp;amp;ref_type=logout_gear" data-width="433" data-layout="standard" data-action="like" data-show-faces="true" data-share="true">
                       
@@ -105,17 +105,17 @@
                               
                 <br/><br/>
                 <div class="panel panel-warning">
-                <div class="panel-heading"> <span class="glyphicon glyphicon-list-alt"></span><b>Saving Life in action &raquo;</b></div>
+                <div class="panel-heading"> <span class="glyphicon glyphicon-list-alt"></span><b>Juna Amagara saving Lifes &raquo;</b></div>
                     <div class="panel-body">
                       <div class="row">
                         <div class="col-md-12 col-xs-12">
                           <ul class="demo1">
-                            <% @ministry.each do |ministry|%>
+                            <% @achievement.each do |ministry|%>
                               <li class="news-item">
                                 <table cellpadding="4">
                                   <tr>
                                     <td><%= image_tag ministry.avatar(), :class=> "img-circle", :size => "83x83", :crop => :fill, :align =>"center"%></td>
-                                    <td><%= truncate(ministry.description, :length => 60 )%><%= link_to 'read more', faqsnews_news_path, :class=>"btn btn-warning btn-xs"%> 
+                                    <td><%= truncate(ministry.description, :length => 120 )%><%= link_to 'read more', faqsnews_news_path, :class=>"btn btn-warning btn-xs"%> 
                                         
                                     </td>
                                   </tr>
@@ -201,6 +201,7 @@
 
 
 <article style="background-color:#57270A; padding:20px 0px;">
+  <font color="white">
     <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -215,19 +216,19 @@
               </ol>
               <div class="carousel-inner">
                 <div class="item active">
-                  <%= image_tag("sponsorchild.png", :class => "")%>
+                  <%= image_tag("5.JPG", :class => "")%>
                    <div class="carousel-caption right-caption">Sponsor a child</div>
                 </div>
                 <div class="item">
-                  <%= image_tag("banner.png", :class => "img-circle")%>
+                  <%= image_tag("6.JPG", :class => "")%>
                   <div class="carousel-caption right-caption">Make a donation</div>
                 </div>
                 <div class="item">
-                  <%= image_tag("banner.png", :class => "img-circle")%>
+                  <%= image_tag("3.JPG", :class => "")%>
                   <div class="carousel-caption right-caption">Raise a great generation</div>
                 </div>
                 <div class="item">
-                  <%= image_tag("banner.png", :class => "img-circle")%>
+                  <%= image_tag("4.JPG", :class => "")%>
                   <div class="carousel-caption right-caption">Feed the hungry and help the poor</div>
                 </div>
               </div>
@@ -244,8 +245,40 @@
         </div>  
           <div class="col-md-6">
             <h2>You have helped us achieve</h2>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="figure">
+                  <%= image_tag("1.JPG", :size => "130x100")%>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <p>
+                  Your support has enabled us to give quality education for the childen in need and enable them.
+                  There is still alot of work to educate many of the children that need this same support.Therefore we need your support
+                  <a class="btn btn-xs btn-warning" href="https://www.eservicepayments.com/cgi-bin/Vanco_ver3.vps?appver3=tCa6TZIkmVMK9bkK7-sJKcL2tK7ZqeZdf80s7XSW6jT6OpUiiS_AnLGLkWolizZo0Z2uYdZlicQx46dF6cOx7i8TtSL7tzLcpZBviH7r5SgRqyy98M_YLV6eu9rtiD85jtYCf9uPWsrZrP3Cmq2xVb66ELaGrI_cq2RjRTEI48E=&ver=3">
+                    Make a Donation
+                  </a> 
+                </p>
+              </div>
+            </div>
+              <hr/>
+              <div class="col-md-3">
+                <div class="figure">
+                    <%= image_tag("2.JPG", :size => "130x100")%>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <p>
+                  Your support has enabled us to put up structures for the needy childen to build them into what God created.We still have a long way to accomplish these construction. Became part of this.
+                  <a class="btn btn-xs btn-warning" href="https://www.eservicepayments.com/cgi-bin/Vanco_ver3.vps?appver3=tCa6TZIkmVMK9bkK7-sJKcL2tK7ZqeZdf80s7XSW6jT6OpUiiS_AnLGLkWolizZo0Z2uYdZlicQx46dF6cOx7i8TtSL7tzLcpZBviH7r5SgRqyy98M_YLV6eu9rtiD85jtYCf9uPWsrZrP3Cmq2xVb66ELaGrI_cq2RjRTEI48E=&ver=3">
+                    Make a Donation
+                  </a>
+                </p>
+              </div>
           </div>
   
-</div>  
+    </div>
+  </div>
+  </font>  
         
 </article>
