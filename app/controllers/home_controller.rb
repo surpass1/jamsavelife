@@ -5,4 +5,9 @@ class HomeController < ApplicationController
   	@event = Home.where(category: 'Workinprogress').last(3)
   	# @advert = Home.where(category: 'advert').last(1)
   end
+  
+  def uganda
+    @uganda = About.where(category: 'uganda')
+  end
+
 end
