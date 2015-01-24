@@ -6,10 +6,54 @@
               </header>
               <div class="col-md-7 col-lg-7" style="">
                 <div class="row">
-                  <div class="col-md-4 col-lg-4" style="">
-                    <%= image_tag("sponsor.png",:class=>"img-circle", :size => "220x200")%>
+                  <div class="col-md-2 col-lg-2">
+                    <div class="counter"  style="width:655px;">
+                      <h4 style="background-color:wheat;"><%= image_tag "jam.png", :size => "130x40"%></h4>
+                        <div class="event-bx">
+                          <h4><a href="#"><%= image_tag "jam.png", :size => "590x400"%></a></h4>
+                         
+                        </div>
+                    </div>
+                    
+                    <div class="counter" style="width:655px;">
+                      <h4 style="color:#000;"><b>DELTA</b><%= image_tag "blackboard.jpg", :size => "40x40", :style=>" margin-left:1px;" %></h4>
+                        <div class="event-bx">
+                          <h4><a href="#">Development, Education, Learning & Training Advancement</a></h4>
+                          
+                         
+                        </div>
+                    </div>
+
+                    <div class="counter"  style="width:655px;">
+                      <h4 style="color:#000;"><b>ABIDE</b><%= image_tag "bible.jpg", :size => "40x40", :style=>" margin-left:1px;" %></h4>
+                        <div class="event-bx">
+                          <h4><a href="#">Development, Education, Learning & Training Advancement</a></h4>
+                          
+                         
+                        </div>
+                    </div>
                   </div>
-                  <div class="col-md-8 col-lg-8" style="">
+                  <div class="col-md-4 col-lg-4">
+                    <div class="counter"  style="width:655px;">
+                      <h4 style="background-color:#fff;"><%= image_tag "camera1.jpg", :size => "40x40", :style=>" margin-left:80px;" %></h4>
+                        <div class="event-bx">
+                          <h4><a href="#">Children And Mothers' Endangerment Reduction Advocacy</a></h4>
+                         
+                        </div>
+                    </div>
+
+                    
+                    <%= image_tag("sponsor.png",:class=>"img-rounded", :size => "220x200")%>
+                  </div>
+                  <div class="col-md-6 col-lg-6" style="">
+                      <div class="counter"  style="width:655px;">
+                        <h4><%= image_tag "ambulance.png", :size => "40x40" %></h4>
+                          <div class="event-bx">
+                            <h4><a href="#">Children And Mothers' Endangerment Reduction Advocacy</a></h4>
+                           
+                          </div>
+                      </div>
+
                       The mission of this ministry is to raise up and equip children in Uganda with the tools they need to become leaders within their community. 
                       It is our vision to empower their personal and spiritual growth by providing children with safe shelter, quality education, balanced nutrition, health education and vocational training 
                   </div>
@@ -106,97 +150,22 @@
                 <div class="panel panel-warning">
                 <div class="panel-heading"> <span class="glyphicon glyphicon-list-alt"></span><b>Juna Amagara saving Lives &raquo;</b></div>
                     <div class="panel-body">
-                      <div class="row">
-                        <div class="col-md-12 col-xs-12">
-                          <ul class="demo1">
-                            <% @achievement.each do |ministry|%>
-                              <li class="news-item">
-                                <table cellpadding="4">
-                                  <tr>
-                                    <td><%= image_tag ministry.avatar(), :class=> "img-circle", :size => "83x83", :crop => :fill, :align =>"center"%></td>
-                                    <td><%= truncate(ministry.description, :length => 120 )%><%= link_to 'read more', faqsnews_news_path, :class=>"btn btn-warning btn-xs"%> 
-                                        
-                                    </td>
-                                  </tr>
-                                </table>
-                              </li>
-                            <% end %>
-                             
-                          </ul>
-                          </div>
-                        </div>
-                       
-                      </div>
-                    <div class="panel-footer"> </div>
                 </div>
+              </div>
+
+              <button class="btn btn-warning btn-block"><a class="" href="http://vimeo.com/88617114">Click to watch 10TH universary video</a></button> 
+
+                <div class="fb-like" data-href="https://www.facebook.com/JunaAmagara?skip_nax_wizard=true&amp;amp;ref_type=logout_gear" data-width="433" data-layout="standard" data-action="like" data-show-faces="true" data-share="true">
+          
              
           </div>
         </div>
     </div>
 </div>  
 
-<br/><br><br/><br/><hr/>
+<hr/>
 
 
-<article class="section" style="background-color:wheat">
-    <div class="container">
-
-        <div class="row">
-            <header class="heading text-center animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
-                <h2>Our Ministries </h2>
-             </header>
-            <div class="col-md-12 col-sm-12 col-xs-12" style="color:">
-
-                <% @ministry.each do |ministry|%>
-                  <div class="col-md-4 col-sm-6 col-xs- 6 animated pulse in" data-animation="pulse" data-delay="200">
-                        <div class="caption" style="padding:20px 0px; color:#000;">
-                          
-                          <%= image_tag ministry.avatar(), :class=> "img-rounded", :size => "318x220", :crop => :fill, :align =>"center"%>
-                          <div class="caption"> 
-                            <header class="heading animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
-                              <%= ministry.title.upcase %>
-                            </header>  
-                            <p class=""><%= truncate(ministry.description, :length => 30 )%><%= link_to 'read more', faqsnews_news_path%></p>
-                          </div>
-                        </div>
-                    </div>
-                <% end %>
-        </div>
-      </div>
-      <header class="heading text-center animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
-          <h2>Work in progress</h2>
-       </header>
-        
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-              <div class="row">
-                <% @event.each do |event|%>
-                    <div class="col-lg-4 col-md-4 contents ">
-                        <div class="projects projects-list">
-                            <ul class="media-list">
-                                
-                                <li class="media animated bounceIn in" data-animation="bounceIn" data-delay="0">
-                                    <figure class="hover-strip pull-left">
-                                        <%= image_tag event.avatar, :class=>"media-object", :alt=>"image" %>
-                                        <div class="date-tag">JAM</div>
-                                    </figure>
-                                    <div class="media-body">
-                                        <h4 class="media-heading"><b><%= event.title %></b></h4>
-                                        <small align="left"><%= truncate(event.description, :length => 111 )%>
-                                        </small>
-                                        <b class="btn btn-warning btn-sm"><%= link_to 'read more', faqsnews_news_path%>
-                                        </b>
-                                    </div>
-                                </li>
-                                
-                            </ul>
-                        </div>
-                       
-                    </div>
-                <% end %>
-            </div> 
-        </div>
-  </article>
 
 
 <article style="background-color:#57270A; padding:20px 0px;">
