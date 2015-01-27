@@ -10,4 +10,8 @@ class HomeController < ApplicationController
     @uganda = About.where(category: 'uganda')
   end
 
+  def background
+    
+  end
+
 end
